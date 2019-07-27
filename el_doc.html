@@ -1,0 +1,1448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Asciidoctor 2.0.10">
+<meta name="author" content="Luis Presa Collada">
+<title>EL Doc</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700">
+<style>
+/* Asciidoctor default stylesheet | MIT License | https://asciidoctor.org */
+/* Uncomment @import statement to use as custom stylesheet */
+/*@import "https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700";*/
+article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section{display:block}
+audio,video{display:inline-block}
+audio:not([controls]){display:none;height:0}
+html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}
+a{background:none}
+a:focus{outline:thin dotted}
+a:active,a:hover{outline:0}
+h1{font-size:2em;margin:.67em 0}
+abbr[title]{border-bottom:1px dotted}
+b,strong{font-weight:bold}
+dfn{font-style:italic}
+hr{-moz-box-sizing:content-box;box-sizing:content-box;height:0}
+mark{background:#ff0;color:#000}
+code,kbd,pre,samp{font-family:monospace;font-size:1em}
+pre{white-space:pre-wrap}
+q{quotes:"\201C" "\201D" "\2018" "\2019"}
+small{font-size:80%}
+sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}
+sup{top:-.5em}
+sub{bottom:-.25em}
+img{border:0}
+svg:not(:root){overflow:hidden}
+figure{margin:0}
+fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}
+legend{border:0;padding:0}
+button,input,select,textarea{font-family:inherit;font-size:100%;margin:0}
+button,input{line-height:normal}
+button,select{text-transform:none}
+button,html input[type="button"],input[type="reset"],input[type="submit"]{-webkit-appearance:button;cursor:pointer}
+button[disabled],html input[disabled]{cursor:default}
+input[type="checkbox"],input[type="radio"]{box-sizing:border-box;padding:0}
+button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}
+textarea{overflow:auto;vertical-align:top}
+table{border-collapse:collapse;border-spacing:0}
+*,*::before,*::after{-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box}
+html,body{font-size:100%}
+body{background:#fff;color:rgba(0,0,0,.8);padding:0;margin:0;font-family:"Noto Serif","DejaVu Serif",serif;font-weight:400;font-style:normal;line-height:1;position:relative;cursor:auto;tab-size:4;-moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased}
+a:hover{cursor:pointer}
+img,object,embed{max-width:100%;height:auto}
+object,embed{height:100%}
+img{-ms-interpolation-mode:bicubic}
+.left{float:left!important}
+.right{float:right!important}
+.text-left{text-align:left!important}
+.text-right{text-align:right!important}
+.text-center{text-align:center!important}
+.text-justify{text-align:justify!important}
+.hide{display:none}
+img,object,svg{display:inline-block;vertical-align:middle}
+textarea{height:auto;min-height:50px}
+select{width:100%}
+.center{margin-left:auto;margin-right:auto}
+.stretch{width:100%}
+.subheader,.admonitionblock td.content>.title,.audioblock>.title,.exampleblock>.title,.imageblock>.title,.listingblock>.title,.literalblock>.title,.stemblock>.title,.openblock>.title,.paragraph>.title,.quoteblock>.title,table.tableblock>.title,.verseblock>.title,.videoblock>.title,.dlist>.title,.olist>.title,.ulist>.title,.qlist>.title,.hdlist>.title{line-height:1.45;color:#7a2518;font-weight:400;margin-top:0;margin-bottom:.25em}
+div,dl,dt,dd,ul,ol,li,h1,h2,h3,#toctitle,.sidebarblock>.content>.title,h4,h5,h6,pre,form,p,blockquote,th,td{margin:0;padding:0;direction:ltr}
+a{color:#2156a5;text-decoration:underline;line-height:inherit}
+a:hover,a:focus{color:#1d4b8f}
+a img{border:0}
+p{font-family:inherit;font-weight:400;font-size:1em;line-height:1.6;margin-bottom:1.25em;text-rendering:optimizeLegibility}
+p aside{font-size:.875em;line-height:1.35;font-style:italic}
+h1,h2,h3,#toctitle,.sidebarblock>.content>.title,h4,h5,h6{font-family:"Open Sans","DejaVu Sans",sans-serif;font-weight:300;font-style:normal;color:#ba3925;text-rendering:optimizeLegibility;margin-top:1em;margin-bottom:.5em;line-height:1.0125em}
+h1 small,h2 small,h3 small,#toctitle small,.sidebarblock>.content>.title small,h4 small,h5 small,h6 small{font-size:60%;color:#e99b8f;line-height:0}
+h1{font-size:2.125em}
+h2{font-size:1.6875em}
+h3,#toctitle,.sidebarblock>.content>.title{font-size:1.375em}
+h4,h5{font-size:1.125em}
+h6{font-size:1em}
+hr{border:solid #dddddf;border-width:1px 0 0;clear:both;margin:1.25em 0 1.1875em;height:0}
+em,i{font-style:italic;line-height:inherit}
+strong,b{font-weight:bold;line-height:inherit}
+small{font-size:60%;line-height:inherit}
+code{font-family:"Droid Sans Mono","DejaVu Sans Mono",monospace;font-weight:400;color:rgba(0,0,0,.9)}
+ul,ol,dl{font-size:1em;line-height:1.6;margin-bottom:1.25em;list-style-position:outside;font-family:inherit}
+ul,ol{margin-left:1.5em}
+ul li ul,ul li ol{margin-left:1.25em;margin-bottom:0;font-size:1em}
+ul.square li ul,ul.circle li ul,ul.disc li ul{list-style:inherit}
+ul.square{list-style-type:square}
+ul.circle{list-style-type:circle}
+ul.disc{list-style-type:disc}
+ol li ul,ol li ol{margin-left:1.25em;margin-bottom:0}
+dl dt{margin-bottom:.3125em;font-weight:bold}
+dl dd{margin-bottom:1.25em}
+abbr,acronym{text-transform:uppercase;font-size:90%;color:rgba(0,0,0,.8);border-bottom:1px dotted #ddd;cursor:help}
+abbr{text-transform:none}
+blockquote{margin:0 0 1.25em;padding:.5625em 1.25em 0 1.1875em;border-left:1px solid #ddd}
+blockquote cite{display:block;font-size:.9375em;color:rgba(0,0,0,.6)}
+blockquote cite::before{content:"\2014 \0020"}
+blockquote cite a,blockquote cite a:visited{color:rgba(0,0,0,.6)}
+blockquote,blockquote p{line-height:1.6;color:rgba(0,0,0,.85)}
+@media screen and (min-width:768px){h1,h2,h3,#toctitle,.sidebarblock>.content>.title,h4,h5,h6{line-height:1.2}
+h1{font-size:2.75em}
+h2{font-size:2.3125em}
+h3,#toctitle,.sidebarblock>.content>.title{font-size:1.6875em}
+h4{font-size:1.4375em}}
+table{background:#fff;margin-bottom:1.25em;border:solid 1px #dedede}
+table thead,table tfoot{background:#f7f8f7}
+table thead tr th,table thead tr td,table tfoot tr th,table tfoot tr td{padding:.5em .625em .625em;font-size:inherit;color:rgba(0,0,0,.8);text-align:left}
+table tr th,table tr td{padding:.5625em .625em;font-size:inherit;color:rgba(0,0,0,.8)}
+table tr.even,table tr.alt{background:#f8f8f7}
+table thead tr th,table tfoot tr th,table tbody tr td,table tr td,table tfoot tr td{display:table-cell;line-height:1.6}
+h1,h2,h3,#toctitle,.sidebarblock>.content>.title,h4,h5,h6{line-height:1.2;word-spacing:-.05em}
+h1 strong,h2 strong,h3 strong,#toctitle strong,.sidebarblock>.content>.title strong,h4 strong,h5 strong,h6 strong{font-weight:400}
+.clearfix::before,.clearfix::after,.float-group::before,.float-group::after{content:" ";display:table}
+.clearfix::after,.float-group::after{clear:both}
+:not(pre):not([class^=L])>code{font-size:.9375em;font-style:normal!important;letter-spacing:0;padding:.1em .5ex;word-spacing:-.15em;background:#f7f7f8;-webkit-border-radius:4px;border-radius:4px;line-height:1.45;text-rendering:optimizeSpeed;word-wrap:break-word}
+:not(pre)>code.nobreak{word-wrap:normal}
+:not(pre)>code.nowrap{white-space:nowrap}
+pre{color:rgba(0,0,0,.9);font-family:"Droid Sans Mono","DejaVu Sans Mono",monospace;line-height:1.45;text-rendering:optimizeSpeed}
+pre code,pre pre{color:inherit;font-size:inherit;line-height:inherit}
+pre>code{display:block}
+pre.nowrap,pre.nowrap pre{white-space:pre;word-wrap:normal}
+em em{font-style:normal}
+strong strong{font-weight:400}
+.keyseq{color:rgba(51,51,51,.8)}
+kbd{font-family:"Droid Sans Mono","DejaVu Sans Mono",monospace;display:inline-block;color:rgba(0,0,0,.8);font-size:.65em;line-height:1.45;background:#f7f7f7;border:1px solid #ccc;-webkit-border-radius:3px;border-radius:3px;-webkit-box-shadow:0 1px 0 rgba(0,0,0,.2),0 0 0 .1em white inset;box-shadow:0 1px 0 rgba(0,0,0,.2),0 0 0 .1em #fff inset;margin:0 .15em;padding:.2em .5em;vertical-align:middle;position:relative;top:-.1em;white-space:nowrap}
+.keyseq kbd:first-child{margin-left:0}
+.keyseq kbd:last-child{margin-right:0}
+.menuseq,.menuref{color:#000}
+.menuseq b:not(.caret),.menuref{font-weight:inherit}
+.menuseq{word-spacing:-.02em}
+.menuseq b.caret{font-size:1.25em;line-height:.8}
+.menuseq i.caret{font-weight:bold;text-align:center;width:.45em}
+b.button::before,b.button::after{position:relative;top:-1px;font-weight:400}
+b.button::before{content:"[";padding:0 3px 0 2px}
+b.button::after{content:"]";padding:0 2px 0 3px}
+p a>code:hover{color:rgba(0,0,0,.9)}
+#header,#content,#footnotes,#footer{width:100%;margin-left:auto;margin-right:auto;margin-top:0;margin-bottom:0;max-width:62.5em;*zoom:1;position:relative;padding-left:.9375em;padding-right:.9375em}
+#header::before,#header::after,#content::before,#content::after,#footnotes::before,#footnotes::after,#footer::before,#footer::after{content:" ";display:table}
+#header::after,#content::after,#footnotes::after,#footer::after{clear:both}
+#content{margin-top:1.25em}
+#content::before{content:none}
+#header>h1:first-child{color:rgba(0,0,0,.85);margin-top:2.25rem;margin-bottom:0}
+#header>h1:first-child+#toc{margin-top:8px;border-top:1px solid #dddddf}
+#header>h1:only-child,body.toc2 #header>h1:nth-last-child(2){border-bottom:1px solid #dddddf;padding-bottom:8px}
+#header .details{border-bottom:1px solid #dddddf;line-height:1.45;padding-top:.25em;padding-bottom:.25em;padding-left:.25em;color:rgba(0,0,0,.6);display:-ms-flexbox;display:-webkit-flex;display:flex;-ms-flex-flow:row wrap;-webkit-flex-flow:row wrap;flex-flow:row wrap}
+#header .details span:first-child{margin-left:-.125em}
+#header .details span.email a{color:rgba(0,0,0,.85)}
+#header .details br{display:none}
+#header .details br+span::before{content:"\00a0\2013\00a0"}
+#header .details br+span.author::before{content:"\00a0\22c5\00a0";color:rgba(0,0,0,.85)}
+#header .details br+span#revremark::before{content:"\00a0|\00a0"}
+#header #revnumber{text-transform:capitalize}
+#header #revnumber::after{content:"\00a0"}
+#content>h1:first-child:not([class]){color:rgba(0,0,0,.85);border-bottom:1px solid #dddddf;padding-bottom:8px;margin-top:0;padding-top:1rem;margin-bottom:1.25rem}
+#toc{border-bottom:1px solid #e7e7e9;padding-bottom:.5em}
+#toc>ul{margin-left:.125em}
+#toc ul.sectlevel0>li>a{font-style:italic}
+#toc ul.sectlevel0 ul.sectlevel1{margin:.5em 0}
+#toc ul{font-family:"Open Sans","DejaVu Sans",sans-serif;list-style-type:none}
+#toc li{line-height:1.3334;margin-top:.3334em}
+#toc a{text-decoration:none}
+#toc a:active{text-decoration:underline}
+#toctitle{color:#7a2518;font-size:1.2em}
+@media screen and (min-width:768px){#toctitle{font-size:1.375em}
+body.toc2{padding-left:15em;padding-right:0}
+#toc.toc2{margin-top:0!important;background:#f8f8f7;position:fixed;width:15em;left:0;top:0;border-right:1px solid #e7e7e9;border-top-width:0!important;border-bottom-width:0!important;z-index:1000;padding:1.25em 1em;height:100%;overflow:auto}
+#toc.toc2 #toctitle{margin-top:0;margin-bottom:.8rem;font-size:1.2em}
+#toc.toc2>ul{font-size:.9em;margin-bottom:0}
+#toc.toc2 ul ul{margin-left:0;padding-left:1em}
+#toc.toc2 ul.sectlevel0 ul.sectlevel1{padding-left:0;margin-top:.5em;margin-bottom:.5em}
+body.toc2.toc-right{padding-left:0;padding-right:15em}
+body.toc2.toc-right #toc.toc2{border-right-width:0;border-left:1px solid #e7e7e9;left:auto;right:0}}
+@media screen and (min-width:1280px){body.toc2{padding-left:20em;padding-right:0}
+#toc.toc2{width:20em}
+#toc.toc2 #toctitle{font-size:1.375em}
+#toc.toc2>ul{font-size:.95em}
+#toc.toc2 ul ul{padding-left:1.25em}
+body.toc2.toc-right{padding-left:0;padding-right:20em}}
+#content #toc{border-style:solid;border-width:1px;border-color:#e0e0dc;margin-bottom:1.25em;padding:1.25em;background:#f8f8f7;-webkit-border-radius:4px;border-radius:4px}
+#content #toc>:first-child{margin-top:0}
+#content #toc>:last-child{margin-bottom:0}
+#footer{max-width:100%;background:rgba(0,0,0,.8);padding:1.25em}
+#footer-text{color:rgba(255,255,255,.8);line-height:1.44}
+#content{margin-bottom:.625em}
+.sect1{padding-bottom:.625em}
+@media screen and (min-width:768px){#content{margin-bottom:1.25em}
+.sect1{padding-bottom:1.25em}}
+.sect1:last-child{padding-bottom:0}
+.sect1+.sect1{border-top:1px solid #e7e7e9}
+#content h1>a.anchor,h2>a.anchor,h3>a.anchor,#toctitle>a.anchor,.sidebarblock>.content>.title>a.anchor,h4>a.anchor,h5>a.anchor,h6>a.anchor{position:absolute;z-index:1001;width:1.5ex;margin-left:-1.5ex;display:block;text-decoration:none!important;visibility:hidden;text-align:center;font-weight:400}
+#content h1>a.anchor::before,h2>a.anchor::before,h3>a.anchor::before,#toctitle>a.anchor::before,.sidebarblock>.content>.title>a.anchor::before,h4>a.anchor::before,h5>a.anchor::before,h6>a.anchor::before{content:"\00A7";font-size:.85em;display:block;padding-top:.1em}
+#content h1:hover>a.anchor,#content h1>a.anchor:hover,h2:hover>a.anchor,h2>a.anchor:hover,h3:hover>a.anchor,#toctitle:hover>a.anchor,.sidebarblock>.content>.title:hover>a.anchor,h3>a.anchor:hover,#toctitle>a.anchor:hover,.sidebarblock>.content>.title>a.anchor:hover,h4:hover>a.anchor,h4>a.anchor:hover,h5:hover>a.anchor,h5>a.anchor:hover,h6:hover>a.anchor,h6>a.anchor:hover{visibility:visible}
+#content h1>a.link,h2>a.link,h3>a.link,#toctitle>a.link,.sidebarblock>.content>.title>a.link,h4>a.link,h5>a.link,h6>a.link{color:#ba3925;text-decoration:none}
+#content h1>a.link:hover,h2>a.link:hover,h3>a.link:hover,#toctitle>a.link:hover,.sidebarblock>.content>.title>a.link:hover,h4>a.link:hover,h5>a.link:hover,h6>a.link:hover{color:#a53221}
+details,.audioblock,.imageblock,.literalblock,.listingblock,.stemblock,.videoblock{margin-bottom:1.25em}
+details>summary:first-of-type{cursor:pointer;display:list-item;outline:none;margin-bottom:.75em}
+.admonitionblock td.content>.title,.audioblock>.title,.exampleblock>.title,.imageblock>.title,.listingblock>.title,.literalblock>.title,.stemblock>.title,.openblock>.title,.paragraph>.title,.quoteblock>.title,table.tableblock>.title,.verseblock>.title,.videoblock>.title,.dlist>.title,.olist>.title,.ulist>.title,.qlist>.title,.hdlist>.title{text-rendering:optimizeLegibility;text-align:left;font-family:"Noto Serif","DejaVu Serif",serif;font-size:1rem;font-style:italic}
+table.tableblock.fit-content>caption.title{white-space:nowrap;width:0}
+.paragraph.lead>p,#preamble>.sectionbody>[class="paragraph"]:first-of-type p{font-size:1.21875em;line-height:1.6;color:rgba(0,0,0,.85)}
+table.tableblock #preamble>.sectionbody>[class="paragraph"]:first-of-type p{font-size:inherit}
+.admonitionblock>table{border-collapse:separate;border:0;background:none;width:100%}
+.admonitionblock>table td.icon{text-align:center;width:80px}
+.admonitionblock>table td.icon img{max-width:none}
+.admonitionblock>table td.icon .title{font-weight:bold;font-family:"Open Sans","DejaVu Sans",sans-serif;text-transform:uppercase}
+.admonitionblock>table td.content{padding-left:1.125em;padding-right:1.25em;border-left:1px solid #dddddf;color:rgba(0,0,0,.6)}
+.admonitionblock>table td.content>:last-child>:last-child{margin-bottom:0}
+.exampleblock>.content{border-style:solid;border-width:1px;border-color:#e6e6e6;margin-bottom:1.25em;padding:1.25em;background:#fff;-webkit-border-radius:4px;border-radius:4px}
+.exampleblock>.content>:first-child{margin-top:0}
+.exampleblock>.content>:last-child{margin-bottom:0}
+.sidebarblock{border-style:solid;border-width:1px;border-color:#dbdbd6;margin-bottom:1.25em;padding:1.25em;background:#f3f3f2;-webkit-border-radius:4px;border-radius:4px}
+.sidebarblock>:first-child{margin-top:0}
+.sidebarblock>:last-child{margin-bottom:0}
+.sidebarblock>.content>.title{color:#7a2518;margin-top:0;text-align:center}
+.exampleblock>.content>:last-child>:last-child,.exampleblock>.content .olist>ol>li:last-child>:last-child,.exampleblock>.content .ulist>ul>li:last-child>:last-child,.exampleblock>.content .qlist>ol>li:last-child>:last-child,.sidebarblock>.content>:last-child>:last-child,.sidebarblock>.content .olist>ol>li:last-child>:last-child,.sidebarblock>.content .ulist>ul>li:last-child>:last-child,.sidebarblock>.content .qlist>ol>li:last-child>:last-child{margin-bottom:0}
+.literalblock pre,.listingblock>.content>pre{-webkit-border-radius:4px;border-radius:4px;word-wrap:break-word;overflow-x:auto;padding:1em;font-size:.8125em}
+@media screen and (min-width:768px){.literalblock pre,.listingblock>.content>pre{font-size:.90625em}}
+@media screen and (min-width:1280px){.literalblock pre,.listingblock>.content>pre{font-size:1em}}
+.literalblock pre,.listingblock>.content>pre:not(.highlight),.listingblock>.content>pre[class="highlight"],.listingblock>.content>pre[class^="highlight "]{background:#f7f7f8}
+.literalblock.output pre{color:#f7f7f8;background:rgba(0,0,0,.9)}
+.listingblock>.content{position:relative}
+.listingblock code[data-lang]::before{display:none;content:attr(data-lang);position:absolute;font-size:.75em;top:.425rem;right:.5rem;line-height:1;text-transform:uppercase;color:inherit;opacity:.5}
+.listingblock:hover code[data-lang]::before{display:block}
+.listingblock.terminal pre .command::before{content:attr(data-prompt);padding-right:.5em;color:inherit;opacity:.5}
+.listingblock.terminal pre .command:not([data-prompt])::before{content:"$"}
+.listingblock pre.highlightjs{padding:0}
+.listingblock pre.highlightjs>code{padding:1em;-webkit-border-radius:4px;border-radius:4px}
+.listingblock pre.prettyprint{border-width:0}
+.prettyprint{background:#f7f7f8}
+pre.prettyprint .linenums{line-height:1.45;margin-left:2em}
+pre.prettyprint li{background:none;list-style-type:inherit;padding-left:0}
+pre.prettyprint li code[data-lang]::before{opacity:1}
+pre.prettyprint li:not(:first-child) code[data-lang]::before{display:none}
+table.linenotable{border-collapse:separate;border:0;margin-bottom:0;background:none}
+table.linenotable td[class]{color:inherit;vertical-align:top;padding:0;line-height:inherit;white-space:normal}
+table.linenotable td.code{padding-left:.75em}
+table.linenotable td.linenos{border-right:1px solid currentColor;opacity:.35;padding-right:.5em}
+pre.pygments .lineno{border-right:1px solid currentColor;opacity:.35;display:inline-block;margin-right:.75em}
+pre.pygments .lineno::before{content:"";margin-right:-.125em}
+.quoteblock{margin:0 1em 1.25em 1.5em;display:table}
+.quoteblock:not(.excerpt)>.title{margin-left:-1.5em;margin-bottom:.75em}
+.quoteblock blockquote,.quoteblock p{color:rgba(0,0,0,.85);font-size:1.15rem;line-height:1.75;word-spacing:.1em;letter-spacing:0;font-style:italic;text-align:justify}
+.quoteblock blockquote{margin:0;padding:0;border:0}
+.quoteblock blockquote::before{content:"\201c";float:left;font-size:2.75em;font-weight:bold;line-height:.6em;margin-left:-.6em;color:#7a2518;text-shadow:0 1px 2px rgba(0,0,0,.1)}
+.quoteblock blockquote>.paragraph:last-child p{margin-bottom:0}
+.quoteblock .attribution{margin-top:.75em;margin-right:.5ex;text-align:right}
+.verseblock{margin:0 1em 1.25em}
+.verseblock pre{font-family:"Open Sans","DejaVu Sans",sans;font-size:1.15rem;color:rgba(0,0,0,.85);font-weight:300;text-rendering:optimizeLegibility}
+.verseblock pre strong{font-weight:400}
+.verseblock .attribution{margin-top:1.25rem;margin-left:.5ex}
+.quoteblock .attribution,.verseblock .attribution{font-size:.9375em;line-height:1.45;font-style:italic}
+.quoteblock .attribution br,.verseblock .attribution br{display:none}
+.quoteblock .attribution cite,.verseblock .attribution cite{display:block;letter-spacing:-.025em;color:rgba(0,0,0,.6)}
+.quoteblock.abstract blockquote::before,.quoteblock.excerpt blockquote::before,.quoteblock .quoteblock blockquote::before{display:none}
+.quoteblock.abstract blockquote,.quoteblock.abstract p,.quoteblock.excerpt blockquote,.quoteblock.excerpt p,.quoteblock .quoteblock blockquote,.quoteblock .quoteblock p{line-height:1.6;word-spacing:0}
+.quoteblock.abstract{margin:0 1em 1.25em;display:block}
+.quoteblock.abstract>.title{margin:0 0 .375em;font-size:1.15em;text-align:center}
+.quoteblock.excerpt>blockquote,.quoteblock .quoteblock{padding:0 0 .25em 1em;border-left:.25em solid #dddddf}
+.quoteblock.excerpt,.quoteblock .quoteblock{margin-left:0}
+.quoteblock.excerpt blockquote,.quoteblock.excerpt p,.quoteblock .quoteblock blockquote,.quoteblock .quoteblock p{color:inherit;font-size:1.0625rem}
+.quoteblock.excerpt .attribution,.quoteblock .quoteblock .attribution{color:inherit;text-align:left;margin-right:0}
+table.tableblock{max-width:100%;border-collapse:separate}
+p.tableblock:last-child{margin-bottom:0}
+td.tableblock>.content>:last-child{margin-bottom:-1.25em}
+td.tableblock>.content>:last-child.sidebarblock{margin-bottom:0}
+table.tableblock,th.tableblock,td.tableblock{border:0 solid #dedede}
+table.grid-all>thead>tr>.tableblock,table.grid-all>tbody>tr>.tableblock{border-width:0 1px 1px 0}
+table.grid-all>tfoot>tr>.tableblock{border-width:1px 1px 0 0}
+table.grid-cols>*>tr>.tableblock{border-width:0 1px 0 0}
+table.grid-rows>thead>tr>.tableblock,table.grid-rows>tbody>tr>.tableblock{border-width:0 0 1px}
+table.grid-rows>tfoot>tr>.tableblock{border-width:1px 0 0}
+table.grid-all>*>tr>.tableblock:last-child,table.grid-cols>*>tr>.tableblock:last-child{border-right-width:0}
+table.grid-all>tbody>tr:last-child>.tableblock,table.grid-all>thead:last-child>tr>.tableblock,table.grid-rows>tbody>tr:last-child>.tableblock,table.grid-rows>thead:last-child>tr>.tableblock{border-bottom-width:0}
+table.frame-all{border-width:1px}
+table.frame-sides{border-width:0 1px}
+table.frame-topbot,table.frame-ends{border-width:1px 0}
+table.stripes-all tr,table.stripes-odd tr:nth-of-type(odd),table.stripes-even tr:nth-of-type(even),table.stripes-hover tr:hover{background:#f8f8f7}
+th.halign-left,td.halign-left{text-align:left}
+th.halign-right,td.halign-right{text-align:right}
+th.halign-center,td.halign-center{text-align:center}
+th.valign-top,td.valign-top{vertical-align:top}
+th.valign-bottom,td.valign-bottom{vertical-align:bottom}
+th.valign-middle,td.valign-middle{vertical-align:middle}
+table thead th,table tfoot th{font-weight:bold}
+tbody tr th{display:table-cell;line-height:1.6;background:#f7f8f7}
+tbody tr th,tbody tr th p,tfoot tr th,tfoot tr th p{color:rgba(0,0,0,.8);font-weight:bold}
+p.tableblock>code:only-child{background:none;padding:0}
+p.tableblock{font-size:1em}
+ol{margin-left:1.75em}
+ul li ol{margin-left:1.5em}
+dl dd{margin-left:1.125em}
+dl dd:last-child,dl dd:last-child>:last-child{margin-bottom:0}
+ol>li p,ul>li p,ul dd,ol dd,.olist .olist,.ulist .ulist,.ulist .olist,.olist .ulist{margin-bottom:.625em}
+ul.checklist,ul.none,ol.none,ul.no-bullet,ol.no-bullet,ol.unnumbered,ul.unstyled,ol.unstyled{list-style-type:none}
+ul.no-bullet,ol.no-bullet,ol.unnumbered{margin-left:.625em}
+ul.unstyled,ol.unstyled{margin-left:0}
+ul.checklist{margin-left:.625em}
+ul.checklist li>p:first-child>.fa-square-o:first-child,ul.checklist li>p:first-child>.fa-check-square-o:first-child{width:1.25em;font-size:.8em;position:relative;bottom:.125em}
+ul.checklist li>p:first-child>input[type="checkbox"]:first-child{margin-right:.25em}
+ul.inline{display:-ms-flexbox;display:-webkit-box;display:flex;-ms-flex-flow:row wrap;-webkit-flex-flow:row wrap;flex-flow:row wrap;list-style:none;margin:0 0 .625em -1.25em}
+ul.inline>li{margin-left:1.25em}
+.unstyled dl dt{font-weight:400;font-style:normal}
+ol.arabic{list-style-type:decimal}
+ol.decimal{list-style-type:decimal-leading-zero}
+ol.loweralpha{list-style-type:lower-alpha}
+ol.upperalpha{list-style-type:upper-alpha}
+ol.lowerroman{list-style-type:lower-roman}
+ol.upperroman{list-style-type:upper-roman}
+ol.lowergreek{list-style-type:lower-greek}
+.hdlist>table,.colist>table{border:0;background:none}
+.hdlist>table>tbody>tr,.colist>table>tbody>tr{background:none}
+td.hdlist1,td.hdlist2{vertical-align:top;padding:0 .625em}
+td.hdlist1{font-weight:bold;padding-bottom:1.25em}
+.literalblock+.colist,.listingblock+.colist{margin-top:-.5em}
+.colist td:not([class]):first-child{padding:.4em .75em 0;line-height:1;vertical-align:top}
+.colist td:not([class]):first-child img{max-width:none}
+.colist td:not([class]):last-child{padding:.25em 0}
+.thumb,.th{line-height:0;display:inline-block;border:solid 4px #fff;-webkit-box-shadow:0 0 0 1px #ddd;box-shadow:0 0 0 1px #ddd}
+.imageblock.left{margin:.25em .625em 1.25em 0}
+.imageblock.right{margin:.25em 0 1.25em .625em}
+.imageblock>.title{margin-bottom:0}
+.imageblock.thumb,.imageblock.th{border-width:6px}
+.imageblock.thumb>.title,.imageblock.th>.title{padding:0 .125em}
+.image.left,.image.right{margin-top:.25em;margin-bottom:.25em;display:inline-block;line-height:0}
+.image.left{margin-right:.625em}
+.image.right{margin-left:.625em}
+a.image{text-decoration:none;display:inline-block}
+a.image object{pointer-events:none}
+sup.footnote,sup.footnoteref{font-size:.875em;position:static;vertical-align:super}
+sup.footnote a,sup.footnoteref a{text-decoration:none}
+sup.footnote a:active,sup.footnoteref a:active{text-decoration:underline}
+#footnotes{padding-top:.75em;padding-bottom:.75em;margin-bottom:.625em}
+#footnotes hr{width:20%;min-width:6.25em;margin:-.25em 0 .75em;border-width:1px 0 0}
+#footnotes .footnote{padding:0 .375em 0 .225em;line-height:1.3334;font-size:.875em;margin-left:1.2em;margin-bottom:.2em}
+#footnotes .footnote a:first-of-type{font-weight:bold;text-decoration:none;margin-left:-1.05em}
+#footnotes .footnote:last-of-type{margin-bottom:0}
+#content #footnotes{margin-top:-.625em;margin-bottom:0;padding:.75em 0}
+.gist .file-data>table{border:0;background:#fff;width:100%;margin-bottom:0}
+.gist .file-data>table td.line-data{width:99%}
+div.unbreakable{page-break-inside:avoid}
+.big{font-size:larger}
+.small{font-size:smaller}
+.underline{text-decoration:underline}
+.overline{text-decoration:overline}
+.line-through{text-decoration:line-through}
+.aqua{color:#00bfbf}
+.aqua-background{background:#00fafa}
+.black{color:#000}
+.black-background{background:#000}
+.blue{color:#0000bf}
+.blue-background{background:#0000fa}
+.fuchsia{color:#bf00bf}
+.fuchsia-background{background:#fa00fa}
+.gray{color:#606060}
+.gray-background{background:#7d7d7d}
+.green{color:#006000}
+.green-background{background:#007d00}
+.lime{color:#00bf00}
+.lime-background{background:#00fa00}
+.maroon{color:#600000}
+.maroon-background{background:#7d0000}
+.navy{color:#000060}
+.navy-background{background:#00007d}
+.olive{color:#606000}
+.olive-background{background:#7d7d00}
+.purple{color:#600060}
+.purple-background{background:#7d007d}
+.red{color:#bf0000}
+.red-background{background:#fa0000}
+.silver{color:#909090}
+.silver-background{background:#bcbcbc}
+.teal{color:#006060}
+.teal-background{background:#007d7d}
+.white{color:#bfbfbf}
+.white-background{background:#fafafa}
+.yellow{color:#bfbf00}
+.yellow-background{background:#fafa00}
+span.icon>.fa{cursor:default}
+a span.icon>.fa{cursor:inherit}
+.admonitionblock td.icon [class^="fa icon-"]{font-size:2.5em;text-shadow:1px 1px 2px rgba(0,0,0,.5);cursor:default}
+.admonitionblock td.icon .icon-note::before{content:"\f05a";color:#19407c}
+.admonitionblock td.icon .icon-tip::before{content:"\f0eb";text-shadow:1px 1px 2px rgba(155,155,0,.8);color:#111}
+.admonitionblock td.icon .icon-warning::before{content:"\f071";color:#bf6900}
+.admonitionblock td.icon .icon-caution::before{content:"\f06d";color:#bf3400}
+.admonitionblock td.icon .icon-important::before{content:"\f06a";color:#bf0000}
+.conum[data-value]{display:inline-block;color:#fff!important;background:rgba(0,0,0,.8);-webkit-border-radius:100px;border-radius:100px;text-align:center;font-size:.75em;width:1.67em;height:1.67em;line-height:1.67em;font-family:"Open Sans","DejaVu Sans",sans-serif;font-style:normal;font-weight:bold}
+.conum[data-value] *{color:#fff!important}
+.conum[data-value]+b{display:none}
+.conum[data-value]::after{content:attr(data-value)}
+pre .conum[data-value]{position:relative;top:-.125em}
+b.conum *{color:inherit!important}
+.conum:not([data-value]):empty{display:none}
+dt,th.tableblock,td.content,div.footnote{text-rendering:optimizeLegibility}
+h1,h2,p,td.content,span.alt{letter-spacing:-.01em}
+p strong,td.content strong,div.footnote strong{letter-spacing:-.005em}
+p,blockquote,dt,td.content,span.alt{font-size:1.0625rem}
+p{margin-bottom:1.25rem}
+.sidebarblock p,.sidebarblock dt,.sidebarblock td.content,p.tableblock{font-size:1em}
+.exampleblock>.content{background:#fffef7;border-color:#e0e0dc;-webkit-box-shadow:0 1px 4px #e0e0dc;box-shadow:0 1px 4px #e0e0dc}
+.print-only{display:none!important}
+@page{margin:1.25cm .75cm}
+@media print{*{-webkit-box-shadow:none!important;box-shadow:none!important;text-shadow:none!important}
+html{font-size:80%}
+a{color:inherit!important;text-decoration:underline!important}
+a.bare,a[href^="#"],a[href^="mailto:"]{text-decoration:none!important}
+a[href^="http:"]:not(.bare)::after,a[href^="https:"]:not(.bare)::after{content:"(" attr(href) ")";display:inline-block;font-size:.875em;padding-left:.25em}
+abbr[title]::after{content:" (" attr(title) ")"}
+pre,blockquote,tr,img,object,svg{page-break-inside:avoid}
+thead{display:table-header-group}
+svg{max-width:100%}
+p,blockquote,dt,td.content{font-size:1em;orphans:3;widows:3}
+h2,h3,#toctitle,.sidebarblock>.content>.title{page-break-after:avoid}
+#toc,.sidebarblock,.exampleblock>.content{background:none!important}
+#toc{border-bottom:1px solid #dddddf!important;padding-bottom:0!important}
+body.book #header{text-align:center}
+body.book #header>h1:first-child{border:0!important;margin:2.5em 0 1em}
+body.book #header .details{border:0!important;display:block;padding:0!important}
+body.book #header .details span:first-child{margin-left:0!important}
+body.book #header .details br{display:block}
+body.book #header .details br+span::before{content:none!important}
+body.book #toc{border:0!important;text-align:left!important;padding:0!important;margin:0!important}
+body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-break-before:always}
+.listingblock code[data-lang]::before{display:block}
+#footer{padding:0 .9375em}
+.hide-on-print{display:none!important}
+.print-only{display:block!important}
+.hide-for-print{display:none!important}
+.show-for-print{display:inherit!important}}
+@media print,amzn-kf8{#header>h1:first-child{margin-top:1.25rem}
+.sect1{padding:0!important}
+.sect1+.sect1{border:0}
+#footer{background:none}
+#footer-text{color:rgba(0,0,0,.6);font-size:.9em}}
+@media amzn-kf8{#header,#content,#footnotes,#footer{padding:0}}
+</style>
+</head>
+<body class="article">
+<div id="header">
+<h1>EL Doc</h1>
+<div class="details">
+<span id="author" class="author">Luis Presa Collada</span><br>
+<span id="revdate">Espero que lo entendáis todo.</span>
+</div>
+<div id="toc" class="toc">
+<div id="toctitle">Índice</div>
+<ul class="sectlevel1">
+<li><a href="#_las_tiradas">Las tiradas</a>
+<ul class="sectlevel2">
+<li><a href="#_la_tirada_abierta">La tirada Abierta</a></li>
+<li><a href="#_pifiar">Pifiar</a></li>
+<li><a href="#_maestría">Maestría</a></li>
+<li><a href="#_controles">Controles</a></li>
+</ul>
+</li>
+<li><a href="#_secundarias_y_sus_movidas">Secundarias y sus movidas</a>
+<ul class="sectlevel2">
+<li><a href="#_pasivas">Pasivas</a></li>
+<li><a href="#_pifiando_en_secundarias">Pifiando en secundarias</a></li>
+<li><a href="#_especializarse">Especializarse</a></li>
+<li><a href="#_habilidades_de_conocimiento">Habilidades de Conocimiento</a></li>
+<li><a href="#_petición">Petición</a></li>
+</ul>
+</li>
+<li><a href="#_entre_la_vida_y_la_muerte">Entre la Vida y la Muerte</a>
+<ul class="sectlevel2">
+<li><a href="#_desangrarse">Desangrarse</a></li>
+<li><a href="#_la_línea_entre_ambos_estados">La línea entre ambos estados</a></li>
+<li><a href="#_el_llamamiento">El Llamamiento</a></li>
+</ul>
+</li>
+<li><a href="#_la_recuperación">La Recuperación</a></li>
+<li><a href="#_capacidades_físicas">Capacidades físicas</a>
+<ul class="sectlevel2">
+<li><a href="#_índice_de_peso">Índice de peso</a></li>
+<li><a href="#_cansancio">Cansancio</a></li>
+<li><a href="#_desplazamiento_y_cansancio_no_voy_a_ser_nazi">Desplazamiento y cansancio (No voy a ser nazi)</a></li>
+</ul>
+</li>
+<li><a href="#_tablas_de_armas_y_las_armas">Tablas de Armas y las armas</a></li>
+<li><a href="#_hablemos_del_ki_artes_marciales_y_los_ars_magnum">Hablemos del ki, artes marciales y los ars magnum</a>
+<ul class="sectlevel2">
+<li><a href="#_la_moneda_de_cambio">La moneda de cambio</a></li>
+<li><a href="#_el_combustible">El combustible</a></li>
+<li><a href="#_cómo_hacemos_cosas">¿Cómo hacemos cosas?</a></li>
+<li><a href="#_opciones_para_gastar_cm">Opciones para gastar CM</a></li>
+<li><a href="#_artes_marciales">Artes marciales</a></li>
+</ul>
+</li>
+<li><a href="#_la_magia">La Magia</a>
+<ul class="sectlevel2">
+<li><a href="#_la_moneda_de_cambio_2">La moneda de cambio</a></li>
+<li><a href="#_el_combustible_2">El Combustible</a></li>
+<li><a href="#_cómo_lanzamos_un_conjuro">¿Cómo lanzamos un conjuro?</a></li>
+<li><a href="#_os_hacen_daño_mientras_acumuláis">Os hacen daño mientras acumuláis</a></li>
+<li><a href="#_proyección_mágica_lanzar_hechizos">Proyección mágica (LANZAR HECHIZOS)</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div id="content">
+<div class="sect1">
+<h2 id="_las_tiradas">Las tiradas</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Normalmente me tendréis que tirar d100 o d10, pero hay ciertas mecánicas que debéis
+conocer.</p>
+</div>
+<div class="sect2">
+<h3 id="_la_tirada_abierta">La tirada Abierta</h3>
+<div class="paragraph">
+<p>Cuando se saca 90 o más en una tirada (sólo dado), se vuelven a lanzar los dados y el
+resultado se suma al resultado total, si en esta segunda tirada se saca 91 o más, pues
+otra vez, si en la siguiente sale 92 o más, etc. Un resultado de 100 es siempre abierto.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_pifiar">Pifiar</h3>
+<div class="paragraph">
+<p>En anima pifiais con 1, 2 ó 3, aunque por movidas externas estos números pueden
+cambiar, por ejemplo con magia. Si pifiáis tenéis que tirar un d100 para ver vuestro nivel
+de pifia (no se admite tirada abierta en esta tirada), cagarla con un 100 es horriblemente
+peor que cagarla con un 1. Ejemplo: Pifiar con un 1 puede suponer que se os cae el arma,
+con un 100 igual os apuñalais a vosotros mismos.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_maestría">Maestría</h3>
+<div class="paragraph">
+<p>Si tenéis 200 o más en una habilidad, el 3 no es pifia para vosotros.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_controles">Controles</h3>
+<div class="paragraph">
+<p>Cuando yo os pida hacer una tirada estamos haciendo un control, tenéis que sacar más
+de lo que os pido para superarlo, o sacar cuanto más mejor cuando os lo pido al aire.
+En controles de resistencias no tenéis tiradas abiertas, pero son superados
+automáticamente si de base tenéis 20 más de lo necesario para superar el control
+En controles de características enfrentadas (se hacen con d10), si os sacáis mas de 4 en
+la característica principal, cada punto sobrante cuenta el doble. EJEMPLO: X se enfrenta
+con fuerza a Y con destreza. Fuerza de X = 13, Destreza de Y = 6. 13-6=7 7-4=3 , 3
+puntos de X valen el doble así que al final sería un control enfrentado tal que:
+Fuerza de X + esos 3 puntos + su tirada, frente a Destreza de Y más su tirada.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_secundarias_y_sus_movidas">Secundarias y sus movidas</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_pasivas">Pasivas</h3>
+<div class="paragraph">
+<p>Hay habilidades que estais usando sin daros cuenta, y es el master quien debe haceros
+el control. Como se verá mas adelante es importante diferenciar entre algo activo y algo
+pasivo.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_pifiando_en_secundarias">Pifiando en secundarias</h3>
+<div class="paragraph">
+<p>Os adjunto algo del propio libro:</p>
+</div>
+<div class="quoteblock">
+<blockquote>
+<div class="paragraph">
+<p>1 a 50: Si la Pifia es inferior a 50, la acción simplemente no
+tiene éxito. Una persona que trata de moverse en silencio
+tropieza causando un sonoro ruido, o alguien que trata de
+identificar una planta no tiene ni una remota idea de su
+procedencia o efectos.
+51 a 95: Representa que la acción fracasa terriblemente
+y de un modo perjudicial para el personaje. Al realizar
+sus acrobacias cae haciéndose daño en una pierna, o al
+buscar una puerta oculta piensa que existe una donde
+no la hay.
+96 a 100: Es un fracaso absoluto y trágico. El personaje
+confundirá un antídoto con un veneno o hundirá su
+barco mientras intentaba sacarlo del puerto.</p>
+</div>
+</blockquote>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_especializarse">Especializarse</h3>
+<div class="paragraph">
+<p>Habrá habilidades en las que podáis especializaros y obtendréis un bonificador en esa
+subrama de la habilidad, pero un penalizador en todo lo demás.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_habilidades_de_conocimiento">Habilidades de Conocimiento</h3>
+<div class="paragraph">
+<p>Si hay que saber, no es que tengáis el penalizador de -30, es que no tenéis ni zorra y no
+podéis tirar.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_petición">Petición</h3>
+<div class="paragraph">
+<p>Leeros las habilidades que tenéis. Y cómo se usan.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_entre_la_vida_y_la_muerte">Entre la Vida y la Muerte</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Vayamos al grano, podéis morir en las siguientes situaciones:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Superáis al quíntuple de vuestra constitución como numero negativo de PV</p>
+</li>
+<li>
+<p>Crítico letal (Los vemos más adelante en el apartado de Combate)</p>
+</li>
+<li>
+<p>Fallar por más de 60 la RF especificada en “La línea entre ambos estados”</p>
+</li>
+</ul>
+</div>
+<div class="sect2">
+<h3 id="_desangrarse">Desangrarse</h3>
+<div class="paragraph">
+<p>Si tenéis hemorragias por la razón que sea perderéis un PV cada minuto. (Si tenéis dos
+heridas, me parece racional que sean 2, 3 hemorragias 3, etc.) Podéis parar esto con un
+control de medicina en fácil (DIF 40).</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_la_línea_entre_ambos_estados">La línea entre ambos estados</h3>
+<div class="paragraph">
+<p>Mientras estéis por debajo de 0 PV está en estado entre la vida y la muerte. Tiene que
+tirar cada hora RF 120, para estabilizarse o perder otro punto de vida. Si se estabiliza se
+queda a 0 puntos. Se puede estabilizar a otro con un control de medicina MEDIO (DIF
+80)
+Estabilizarse hace que caiga un penalizador de -60 a toda acción por parte del herido,
+que desaparecerá a lo que dicte su nivel de regeneración.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_el_llamamiento">El Llamamiento</h3>
+<div class="paragraph">
+<p>No suena bien, ¿eh? Una vez muertos vuestra alma se queda de parranda por este
+mundo, tantas horas como poder tenga. Dependiendo del alma se puede quedar en el
+sitio o puede vagar.
+<strong>Nota</strong>: Algunas cosas sobrenaturales pueden revivir a alguien si su alma no ha recibido el
+llamamiento aún.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_la_recuperación">La Recuperación</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Bueno, a leer, que palos os van a caer.
+Hay un nivel de regeneración que os corresponde según vuestra constitución. En función
+de esto va la reducción de negativos (Como el que os pone el llamamiento) que perdéis
+al día y la vida que os curáis. Podéis beneficiarios de cualquier nivel de regeneración,
+exceptuando 19 y 20 que son para seres de gnosis 40 y 45. De paso, a partir del nivel 5
+obtenéis capacidades especiales.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_capacidades_físicas">Capacidades físicas</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Tipo de movimiento
+Igual a tu agilidad, expresa como de rápido eres y cuanto te puedes mover.</p>
+</div>
+<div class="sect2">
+<h3 id="_índice_de_peso">Índice de peso</h3>
+<div class="paragraph">
+<p>Igual a vuestra fuerza, expresa cuanto peso podéis levantar sin problemas y cuanto de
+máximo. Es importante destacar la siguiente frase del libro: La primera columna
+representa cuánto carga o alza sobre su cabeza sin problemas. Si un sujeto lleva encima
+o levanta más de esta cantidad, disminuye en dos su Tipo de movimiento y pierde un
+punto de Cansancio adicional cada media hora que viaje con el sobrepeso.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_cansancio">Cansancio</h3>
+<div class="paragraph">
+<p>Igual a constitución. Podéis gastar estos puntos para mejorar vuestras acciones físicas
+sobre esforzándoos hasta un máximo de 2 por tirada. (Cada uno da un +15) Tenéis que
+declararlo antes de las tiradas. En controles de característica dan +1 en lugar de +15. Y
+para magos y guerreros de ki, cada punto invertido aumenta durante ese asalto +15 su
+ACT, o confiere un bono de +1 a todas sus Acumulaciones de Ki.</p>
+</div>
+<div class="sect3">
+<h4 id="_agotarse">Agotarse</h4>
+<div class="paragraph">
+<p>Cuando bajéis a 4 puntos de cansancio empiezan los penalizadores a toda acción.</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_desplazamiento_y_cansancio_no_voy_a_ser_nazi">Desplazamiento y cansancio (No voy a ser nazi)</h3>
+<div class="quoteblock">
+<blockquote>
+<div class="paragraph">
+<p>Naturalmente, cuando alguien se desplaza va extenuándose gradualmente.
+A continuación podéis ver una referencia de cómo se agota un personaje en
+relación a su velocidad:</p>
+</div>
+<div class="paragraph">
+<p><strong>Al paso</strong>: El personaje camina normalmente. Como media, pierde un punto
+de Cansancio cada seis horas.</p>
+</div>
+<div class="paragraph">
+<p><strong>Marcha</strong>: Es una velocidad un poco más rápida, un trote ligero pero sin llegar
+a correr. Como media, el personaje sufre la pérdida de un punto de Cansancio
+cada dos horas de marcha.</p>
+</div>
+<div class="paragraph">
+<p><strong>Corriendo</strong>: El personaje corre sin esforzarse al máximo. Se desplaza dos
+tipos de movimiento menos de lo que le permite su límite, perdiendo la cantidad
+de Cansancio que determine un control de Atletismo en la Tabla 8. Como
+media, un alguien que se mueve a esta velocidad pierde un punto de cansancio
+cada cinco minutos.</p>
+</div>
+<div class="paragraph">
+<p><strong>Movimiento máximo</strong>: Es la máxima velocidad a la que alguien puede
+desplazarse. Usa su velocidad al completo, pero resulta extremadamente
+agotador, por lo que el personaje debe de realizar un control de Atletismo
+usando la Tabla 8 para determinar cuantos puntos de Cansancio pierde por
+asalto al usar esta clase de movimiento. Como media, un personaje pierde un
+punto de cansancio cada dos asaltos que se mueva a esta velocidad.</p>
+</div>
+</blockquote>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_tablas_de_armas_y_las_armas">Tablas de Armas y las armas</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>De primeras sólo sabéis usar un arma, tenéis que pillar una tabla para saber usar otras.
+Las compráis y pum, ya sabéis.
+Aparte sobre las armas, cada una tiene un conjunto de reglas, aseguraos de entender
+que significa cada una.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_hablemos_del_ki_artes_marciales_y_los_ars_magnum">Hablemos del ki, artes marciales y los ars magnum</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>El ki es realmente simple, sería una versión simplificada de la magia y pensada para
+luchadores. Sería algo al estilo Dragon Ball o Naruto. He dicho simple en primera
+instancia, para un uso básico, pero claro, luego tiene sus movidas interesantes que no
+relataré aquí puesto que ninguno de vosotros tiene ni siquiera un poco de Lore para
+entender cómo va toda esta vaina.</p>
+</div>
+<div class="sect2">
+<h3 id="_la_moneda_de_cambio">La moneda de cambio</h3>
+<div class="paragraph">
+<p>En este caso esa sería el CM, Conocimiento Marcial. Se obtiene por todas las clases en
+mayor o menor medida al subir de nivel o con la dominación de ciertas artes marciales.
+Con esto podéis adquirir habilidades del ki o técnicas de dominio, y ars magnum,
+aunque estos últimos son una de las movidas que es despatarrantemente extraño que
+conozcáis y más aún que las aprendáis.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_el_combustible">El combustible</h3>
+<div class="paragraph">
+<p>Pues el ki, se regenera a ritmo de 6 por hora, 1 cada 10 minutos. Jugamos con la regla
+de unificación de ki por eso es así, no os voy a hacer la putada de no jugar con esa
+regla. Aunque usándola se bufa este apartado notoriamente.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_cómo_hacemos_cosas">¿Cómo hacemos cosas?</h3>
+<div class="paragraph">
+<p>Funciona de forma parecida a la magia, acumulamos ki si lo necesitamos y luego
+activamos lo que haya que activar. Si hacemos algo más en el turno pues la
+acumulación se va a la mitad.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_opciones_para_gastar_cm">Opciones para gastar CM</h3>
+<div class="paragraph">
+<p>Como os dije antes hay varias opciones, que serían la siguientes:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Habilidades del ki: Es un árbol de habilidades (siento ponerme un poco nazi, pero ninguno de vosotros tiene lore para conocer aquí, así que tardaréis un
+poco en aprender)</p>
+</li>
+<li>
+<p>El némesis: Como opuesto al ki, el némesis provee un árbol de habilidades también.</p>
+</li>
+<li>
+<p>Técnicas de ki: Estas técnicas se activan y suelen servir principalmente para combate, son super boosts temporales o momentáneos. Se activan como la magia (véase apartado como lanzar un conjuro), y se aprenden como el psíquico, debemos conocer una técnica de menos nivel para dominar uno de
+nivel superior.</p>
+</li>
+<li>
+<p>Sellos de invocación: Es muy caro para vosotros, por ahora, pero con ellos se puede invocar seres tras haber pactado con ellos, como en Naruto.</p>
+</li>
+</ul>
+</div>
+<div class="sect3">
+<h4 id="_ars_magnus">Ars Magnus</h4>
+<div class="paragraph">
+<p>Esta es otra de las formas para gastar CM, pero también PD, son estilos de combate o
+cosas algo locas. En un principio me parece óptimo no usarlos por el momento, pues
+tendría que introduciros otra movida conocida como Legados de sangre (Aunque sólo
+en algunos casos), que complicarían un poco la creación de personajes. En contra de la
+regla general, podemos negociar si al subir de nivel queréis coger uno por la regla de
+liberación de puntos de creación, pero bueno, eso es hablarlo. Cómo decía hay varios
+tipos de ars magnus, las normales, las locas, y las armas imposibles que necesitan
+tener inhumanidad para siquiera empuñarlas. Mandaré uno por el grupo para que lo
+veais.</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_artes_marciales">Artes marciales</h3>
+<div class="paragraph">
+<p>La dominación de un arte Marcial supone un coste de PD, estamos usando las reglas de
+Dominios del Ki, así que la explicación del libro básico debe ser ignorada. Aprender una
+os da competencia con combate desarmado aparte de los beneficios que os otorgue el
+arte marcial. No es posible combinar algunas cosas, estad atentos.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_la_magia">La Magia</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Llegamos a lo gordo. Realmente hay varios teoremas de uso de la magia, pero no os voy
+a engañar, me parece una señora chapa, sería mas “interesante” si se pudiesen combinar, pero como dice el libro un mago no puede cambiar su concepción de la magia así como así.
+Dicho esto procedo a explicaros el teorema tradicional. Si bien es cierto, uno
+de esos sistemas del Arcana se considera la forma primigenia de la magia, si en algún
+momento queréis hacer alguna cosa extraña puede, recalco, puede, que os lo tire por
+ahí.</p>
+</div>
+<div class="sect2">
+<h3 id="_la_moneda_de_cambio_2">La moneda de cambio</h3>
+<div class="paragraph">
+<p>Vuestra moneda de cambio aquí es el Nivel Mágico, con el que podéis desarrollar vías o
+hacer lo que os de la gana realmente, porque podéis usarlo también para rellenar el
+Arcana Sephirah. Que tengáis un nivel mágico de 400 no significa que lo estéis usando
+todo, según el juego tenéis que crecer, si un hechicero llega a su máximo, y no puede ir
+más allá pues carece de sentido</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_el_combustible_2">El Combustible</h3>
+<div class="paragraph">
+<p>El combustible para hacer las cosas aquí es el Zeón, con ello podéis activar todo tipo de
+conjuros y hacer muchas cosas muy locas. desde una luz hasta una bola de oscuridad
+que destruye enemigos con abiertas de 460. Vuestro ACT a menos que tengáis algo
+extraño es lo que regeneráis al día.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_cómo_lanzamos_un_conjuro">¿Cómo lanzamos un conjuro?</h3>
+<div class="paragraph">
+<p>Sea lo que sea que quieres hacer, tienes que acumular magia, y acumulas tanta por turno
+como ACT tengas (Acumulación Por Turno, vaya, que sorpresa), cuando tengas la
+suficiente para lanzar un conjuro en el grado que quieras pues lo consumes para activar
+el conjuro, OJO ACTIVAR NO ES LANZAR. Veamos las dos formas de ACTIVAR:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Magia pura: Acumuláis zeón, sin más, a la espera de hacer algo, pero si paráis un
+turno pues perdéis toda la acumulación 10 de zeón de la reserva general en el
+proceso.</p>
+</li>
+<li>
+<p>Preparar conjuro: Declaráis el conjuro que preparáis y el grado. Toda vuestra
+acumulación va para él (os quedáis un poco en bragas si, pero tiene su parte
+buena), una vez lo tengáis preparado, podéis aguantarlo un numero de asaltos
+equivalente a vuestro atributo de poder, si decidís no lanzarlo, pues el zeón
+vuelve a la reserva perdiendo 10 en el proceso. Cuando acabáis de prepararlo
+podéis preparar otro o acumular magia pura. Importante: Algunos magos tienen
+a veces bonos a su ACT al usar ciertas vías. Dichos bonificadores sólo pueden
+aplicarse cuando se preparan para lanzar un conjuro concreto, y no si acumulan
+magia pura.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_os_hacen_daño_mientras_acumuláis">Os hacen daño mientras acumuláis</h3>
+<div class="paragraph">
+<p>RF contra el doble del daño sufrido o perdéis todo lo acumulado (los que estén
+preparando conjuro determinado tienen un +40), si no llegáis al daño sufrido en la
+resistencia perdéis también el zeón.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_proyección_mágica_lanzar_hechizos">Proyección mágica (LANZAR HECHIZOS)</h3>
+<div class="paragraph">
+<p>Con esta habilidad se mide cómo de bien enfoca el personaje sus poderes, es el ataque
+y defensa de los hechiceros. Indica su alcance máximo. Sea cual sea la situación tiene un
++40 a la tirada si está en contacto directo con el objetivo.</p>
+</div>
+<div class="sect3">
+<h4 id="_y_qué_pasa_si_se_pifia">¿Y qué pasa si se pifia?</h4>
+<div class="paragraph">
+<p>Si se pifia el lanzamiento de un conjuro pues se pierde el zeón y ya, pero como el grado
+de pifia sea disparatadamente alto igual os tiráis un “Crear luz” dentro de los glóbulos
+oculares y quedáis ciegos. Si se pifia en el uso de un conjuro mantenido, el nivel de pifia
+se resta a la proyección magia del hechicero, como en un escudo por ejemplo.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_desequilibrio">Desequilibrio</h4>
+<div class="paragraph">
+<p>Podéis poner hasta un +30 en la proyección mágica ofensiva y consecuentemente un 30 en la defensiva y viceversa. Se puede manipular a un ritmo de 10 puntos por nivel.</p>
+</div>
+<div class="paragraph">
+<p>Choquemos conjuros
+Se puede estampar una descarga mágica contra otra, normalmente conjuros de ataque.
+No me voy a poner técnico con esto.</p>
+</div>
+<div class="paragraph">
+<p>Conjuros
+Hemos llegado a la vaina poderosa. Cada conjuro tiene 4 grados, a mayor grado, mayor
+coste, mayor efecto y mayor requisito de inteligencia para lanzarlo.</p>
+</div>
+<div class="paragraph">
+<p>¿Cómo aprendo conjuros?
+Pues tienes dos formas, puedes meter puntos de nivel mágico en una vía o seleccionar
+conjuros. Ambos métodos son perfectamente combinables. Seamos racionales, no
+podéis aprender cosas de la nada, no voy a ser nazi, pero no aprenderéis el conjuro
+teletransporte así por la de buenas.
+Vía
+Si metes puntos en una via, subes su nivel, relación 1:1, y conoces tooooodos los
+conjuros de nivel menor igual al tuyo en la vía. Cuando pone libre acceso, debes ir al
+apartado de libre acceso y seleccionar un conjuro para poner ahí o seleccionar una
+subvía mágica.
+Selección de Conjuros
+Este método es más caro, pero más libre, puedes aprender lo que te de la gana, conjuros
+sueltos.</p>
+</div>
+<div class="paragraph">
+<p>Alta Magia y Magia Divina
+Conjuros muy tochos, que solo seres con gran influencia en la realidad pueden lanzar.
+80 para arriba en las vías</p>
+</div>
+<div class="paragraph">
+<p>Tipos de Conjuros
+Mirad, no puedo resumiros esto, os toca leer, en el propio libro en la (CORE) página 120
+lo trae muy simple.</p>
+</div>
+<div class="paragraph">
+<p>Psíquico
+A ver, usemos la cabeza, juas juas juas. Se parece mucho a la magia.</p>
+</div>
+<div class="paragraph">
+<p>La moneda de cambio
+Los CV (Consumos de Voluntad). Tienen dos formas de usarse:</p>
+</div>
+<div class="paragraph">
+<p>Permanentemente
+Puedes gastar un CV para siempre para obtener uno de los siguientes beneficios:
+-</p>
+</div>
+<div class="paragraph">
+<p>Abrir una disciplina
+Dominar un nuevo poder mental nuevo (Tiene que ser uno de una disciplina
+abierta y debemos conocer uno de nivel inferior)
+Incrementar el potencial Psíquico
+Fortalecer un poder (Le damos un +10 en la tirada de potencial psíquico)
+Adquirir un innato: Con eso puedes mantener poderes sin tener que estar
+haciendo solo eso. Cuesta 2 CVs</p>
+</div>
+<div class="paragraph">
+<p>Temporalmente
+Los usos temporales son mejoras momentáneas a cualquier cos psíquica, están en la
+página 212 del libro, resumidas, y pueden hacer muy dinámico a un mentalista.</p>
+</div>
+<div class="paragraph">
+<p>¿Cómo tiro cosas?
+La segunda parte es como la magia, proyección psíquica, para proyectar el poder, medir
+distancia, su uso, el combate, etc etc. La primera parte varia. Un personaje puede usar
+todos los poderes mentales que quiera, repartiendo su potencial psíquico entre todos
+ellos (mínimo de 10 por poder) Y luego por cada uno tiene que hacer una tirada de un
+d100, Revisamos la tabla del poder y vemos con cuanta fuerza lo activa o si falla. Si falla
+sufre fatiga mental, que quita cansancio. (Los poderes psíquicos son buenos, no gastan
+nada, pero ojo con el cansancio si te pega mucho de golpe)</p>
+</div>
+<div class="paragraph">
+<p>Convocatoria
+La convocatoria es el poder de traer y controlar seres entre mundos ligados a lo
+sobrenatural. No es preciso tener el DON para usar estas habilidades, en cierto modo
+son como secundarias.</p>
+</div>
+<div class="paragraph">
+<p>Habilidades de Convocatoria
+Hay 4 habilidades de convocatoria, en un mismo turno se pueden usar las 4, pero sólo
+un control de cada una de ellas.
+-</p>
+</div>
+<div class="paragraph">
+<p>Convocar: Traes seres a este mundo
+Dominar: Controlas a seres
+Atar: Atas una criatura dentro de un contenedor, congelando su existencia.
+Desconvocar: Expulsas seres del mundo.</p>
+</div>
+<div class="paragraph">
+<p>La llamada
+Tenéis que tener idea de lo que queréis traer al mundo u os coméis penalizadores.</p>
+</div>
+<div class="paragraph">
+<p>La dominación
+Una vez se domine a una criatura con un control exitoso, esta cae bajo control de su
+dominador. Aunque esta conserve la conciencia no puede desobedecer a su dominador
+y si quiere liberarse (spoiler sí), cada hora o cada vez que le llegue una orden opuesta a
+su naturaleza el controlador deberá superar de nuevo la tirada de Dominar pero sin falta
+de gastar zeón, pero claro, puede conspirar para liberarse sin incumplir las órdenes. El
+controlador realmente sólo sabe una posición aproximada de la criatura, pero no lo que
+hace. Si el controlador toma zeón de la criatura, técnicamente no debería poder a menos
+que tenga el Don, el vínculo se rompe.</p>
+</div>
+<div class="paragraph">
+<p>El lazo de atadura
+Un conjurador puede decidir atar una criatura a un objeto, a efectos prácticos sería
+transformar la criatura en mas espiritual y encerrarla en un contenedor. La criatura sólo
+puede comunicarse con quien toque el contenedor si está dentro. Como acción pasiva
+el conjurador puede sacarla o meterla en el contenedor sin pagar coste alguno, pero la
+acción se realiza realmente al principio del siguiente asalto. Supongamos que la criatura
+estaba dominada antes de esto, pues esta vaina rompe un poco el juego. Dicha criatura
+no puede librarse de la dominación, en ninguna circunstancia y para ser afectada por
+otro conjurador tiene que estar fuera de su contenedor. Mantener el lazo de atadura
+cuesta zeón diariamente y mientras esté activo al estar la esencia de la criatura
+congelada no puede subir de nivel.</p>
+</div>
+<div class="paragraph">
+<p>Expulsar del mundo físico (¡Vade retro!)
+Lo contrario a convocar, si pasas la dificultad y gastas el zeón puedes sacar a una criatura
+del mundo “material”. Además el numero de unidades por los que pases la tirada son el
+número de días que la criatura deberá esperar para regresar al mundo si puede hacerlo
+por sí misma.</p>
+</div>
+<div class="paragraph">
+<p>Regeneración zeónica de seres atados
+Dado que su esencia está estancada no pueden ser afectadas por el flujo de almas y
+tampoco regenerar zeón, su regeneración es el coste de zeón que su señor paga cada
+día, el cual absorben.</p>
+</div>
+<div class="paragraph">
+<p>Hablemos de los Familiares
+Esas cositas super monas que os ayudan</p>
+</div>
+<div class="paragraph">
+<p>Unión
+Para tener un familiar ambas partes deben estar de acuerdo (o una debe ser dominada
+para dar consentimiento je je je), ambas partes no pueden sacarse más de un nivel. Para
+realizar la unión, el convocador debe superar una dificultad de atar como si la criatura</p>
+</div>
+<div class="paragraph">
+<p>fuese de dos niveles más y pagar 10 veces el coste de zeón que costaría. (Un convocador
+puede hacer esto por dos terceros)
+Cada día el maestro del familiar debe gastar la mitad de los puntos de zeón de lo que
+costaría tenerlo atado. (Ojo, es importante mantener el vínculo)</p>
+</div>
+<div class="paragraph">
+<p>Sus poderes y sus consecuencias
+Esto funciona casi igual que una criatura atada, pero maestro y criatura comparten parte
+de su alma, y por ello la entidad si puede crecer. Subirá de nivel cuando lo haga su amo,
+y puede gastar esos 100PD según el Capítulo 26 (Preferiría veros mirar, porque ese
+capítulo está cerca de cosas muy nazis en el libro del máster)
+Ambos tienen constancia de posición del otro, y pueden sentir a través del otro. Los
+brujos pueden realizar conjuros con el ACT a la mitad a través de la criatura. Los
+familiares no recuperan puntos de zeón, pero si que pueden coger parte de la
+regeneración del maestro si este los deja, y también pueden funcionar como un
+contenedor.
+No os digo toda la movida de tiradas, pero cada vez que uno sufra daño el otro tiene que
+pasar una RF o comerse penalizadores, caer inconsciente, etc.</p>
+</div>
+<div class="paragraph">
+<p>Romper el lazo
+Voluntariamente no se puede, si uno muere y el otro sobrevive, pues se puede tener
+otro lazo y todo chupi. Ahora supongamos que el personaje no paga el zeón necesario
+por lo que sea, cada uno se come un -10 acumulable al día y a la semana se rompe el
+vínculo y el personaje pierde 1 punto de PODER irreversiblemente.</p>
+</div>
+<div class="paragraph">
+<p>Estancar al Familiar
+El maestro puede decidir estancar la esencia del familiar, como en la atadura, para que
+este no suba de nivel. Se puede hacer cuando ya no tienes zeón suficiente para pagar a
+niveles muy altos, mediante esto, familiar y criatura pueden separarse por mas de 5
+puntos de presencia (o lo que es lo mismo por más de un nivel).</p>
+</div>
+<div class="paragraph">
+<p>Invocación
+Lo marco como un apartado nuevo, pero es preciso conocer el apartado anterior de
+Conjuración, al menos la habilidad convocar. Las invocaciones son criaturas que vienen
+hacen un efecto y se piran.</p>
+</div>
+<div class="paragraph">
+<p>Ceremonia de invocación
+Esto funciona igual que convocar, pero al realizar una invocación por primera vez, esta
+propone un pacto y se pira. Cuando el personaje crea haberlo completado, la puede
+invocar de nuevo para sellar el pacto. Si lo cumplió, pues invocación adquirida, pero si
+no lo cumplió… la invocación rechazará su llamada de aquí en adelante y nunca podrá
+volver a llamarla. No hay límite al numero de invocaciones, pero no se puede pactar con
+opuestos, en el caso de los arcanos, no se podría pactar con La Justicia y luego con La
+Justicia Inversa. De aquí en adelante al invocarla hará su eecto</p>
+</div>
+<div class="paragraph">
+<p>COMBATE (QUE EMPIECE LA SALSA, DIGO… EL SALSEO)
+Iniciativa
+Todos tenéis una característica de turno, que varía en función de si usáis arma,
+armadura, etc, pues un d100 + eso, numero más alto tiene prioridad. Lo normal es que
+vayamos por orden, pero un jugador puede decidir esperar, y usar su turno más
+adelante. J1: 100 J2:90 J3:80.
+J1 y J2 deciden esperar. El primero será entonces J3. Después, J1 y J2 quieren seguir
+esperando, en este caso, tendrá su turno antes el más lento, porque el más rápido
+quiere esperar. Y esto nos lleva a un orden tal que J3, J2, J1.</p>
+</div>
+<div class="paragraph">
+<p>Sorpresa
+La sorpresa es pillar a otro personaje desprevenido, es decir que le cueste reaccionar.
+Puede obtenerse de varias formas y lo que hace es imponer un penalizador de -90 al
+sorprendido contra toda acción que haga contra la persona que lo sorprenda. Lo
+incluyo en este punto porque si un jugador saca más de 150 en turno respecto a otro,
+lo sorprende. Si espera, no habrá sorpresa, pero, podrá interrumpir su turno (SISI,
+INTERRUMPIR), incluso si el sorprendido ya ha lanzado los dados para una acción.</p>
+</div>
+<div class="paragraph">
+<p>Acciones
+Hay dos tipos, activas y pasivas, para las activas tienes que tener turno, para las pasivas
+no. Sólo se puede declarar una acción de cada tipo, inclusive el atacar. Tenéis un
+número máximo de acciones activas, pero no tenéis por qué usarlas todas. De hecho,
+por cada una que uséis imponéis un penalizador de -25 a las siguientes. 1ª 0 , 2ª -25,
+3ª -50, …</p>
+</div>
+<div class="paragraph">
+<p>Algunas aclaraciones
+Podéis moveros hasta una cuarta parte de lo que diga vuestro tipo de movimiento
+como acción pasiva, sino se considera una acción activa. E impone -25 a las siguientes.
+Normalmente una secundaria requiere tener el turno, si por alguna razón se necesita
+un control enfrentado contra otro jugador, pues el otro tiene derecho a tirar sin
+consumirle acción.</p>
+</div>
+<div class="paragraph">
+<p>Bases del combate
+Habilidad de ataque, que va por destreza. Defensa se subdivide en: parada, que va por
+destreza, y esquiva que va por agilidad. Atacar es activa y defender es pasiva.</p>
+</div>
+<div class="paragraph">
+<p>Combate cuerpo a cuerpo
+Calculamos el ataque final tirando un d100 y añadiéndolo a la habilidad ofensiva, y lo
+restamos a la defensa final (tmb añadiendo un d100 a la habilidad defensiva).
+Evaluemos posibles resultados:</p>
+</div>
+<div class="paragraph">
+<p>-</p>
+</div>
+<div class="paragraph">
+<p>-</p>
+</div>
+<div class="paragraph">
+<p>La resta queda positiva: el ataque impacta y le quita la posibilidad de turno en
+lo que queda de asalto, si ya lo tuvo pues nada. Luego el numero positivo que
+quede se mira en la tabla de daño que nos dará el porcentaje de daño que
+come el defensor.
+La resta queda negativa: El ataque falla y el rival puede contraatacar. Puede
+hacerlo siempre que aún pueda atacar. Esto es que pueda hacer acciones
+activas aún, y que le queden ataques (si va a hacer ataques adicionales (luego)
+me lo tendría que decir aquí si es la primera vez que va a atacar.) (Sólo podeis
+pegar un golpe de vuelta). Y a vuestro ataque se suma lo que ponga en la tabla
+de daño.</p>
+</div>
+<div class="paragraph">
+<p>Situaciones en Combate
+No os voy a contar todas las que hay (página 88), pero si os digo que son un conjunto
+de penalizadores y bonificadores. No es lo mismo defender un ataque que viene de
+frente que uno que viene de espaldas. Así como tampoco es lo mismo atacar a alguien
+que te ha derribado</p>
+</div>
+<div class="paragraph">
+<p>Defensas adicionales
+No es lo mismo defender un ataque que 5, (un asalto dura 3 segundos, eso sería un
+poco la ostia). La segunda parada tiene un -30, las siguientes un -20 acumulativo hasta
+-90.</p>
+</div>
+<div class="paragraph">
+<p>Ataques adicionales
+Tenéis derecho a un ataque adicional por cada 100 puntos en ataque que tengáis.
+Debéis declarar que vais a hacerlos antes de tirar dados obviamente, y podéis designar
+objetivos, guardarlos para contraataques, como veais. Es importante que sepáis que
+por cada ataque adicional que declaréis imponéis un penalizador a todos ellos,
+depende del tamaño del arma.
+P:-20 M:-30 G:-40
+Y me resta decir que si os quitan la acción por alguna razón, perdéis todos esos
+ataques puesto que no podéis atacar.</p>
+</div>
+<div class="paragraph">
+<p>Ataques con armas adicionales
+Supongamos que lleváis un arma en cada mano. Esto os da un ataque adicional, que
+podéis usar para lo que os de la gana, vuestro turno será el más lento de ambas armas.
+Tenéis un -40 a lo que hagáis con el arma “secundaria” o un -10 si sois ambidextros.</p>
+</div>
+<div class="paragraph">
+<p>Ataques específicos
+Existen ciertas maniobras que cualquier persona puede realizar, como tratar de
+desarmar a alguien o derribarlo. Las tenéis a vuestra disposición en la página 90. Una
+de esas maniobras es atacar apuntando a partes del cuerpo, lo cual es bastante
+interesante en ocasiones.</p>
+</div>
+<div class="paragraph">
+<p>Defensas especiales
+Así como hay ataques hay defensas, son sólo tres y las tenéis en la página 91, es
+interesante que sepáis que hay una que consiste en tankear el golpe y no perder la
+acción.</p>
+</div>
+<div class="paragraph">
+<p>Entereza y Rotura
+De esto me encargo yo si eso. No os metáis en esta vaina.</p>
+</div>
+<div class="paragraph">
+<p>Habilidades secundarias en Combate
+Leed este apartado, en serio, leeros este apartado. Página 92</p>
+</div>
+<div class="paragraph">
+<p>Retirarse del combate
+Si tenéis sorpresa frente a vuestros adversarios, podéis iros, si no, estos tienen
+derecho siempre que puedan atacar claro, a un ataque de oportunidad con el
+modificador de flanco contra vosotros. Si no os dan os vais, si os dan pues os quedáis.</p>
+</div>
+<div class="paragraph">
+<p>Combate de proyectiles
+Hay dos tipos de proyectiles, disparados y lanzados, cada uno con sus movidas.
+Lanzados sería algo del palo de shurikens o lanzas, y disparados arcos o ballestas.
+Habilidad de ataque con proyectiles
+Puedes ser el puto amo y sacarme 8 abiertas, pero un proyectil es lo que es, y su
+habilidad máxima sería de 280, a nivel alto podréis apuntar al ojo de alguien con una
+pistola, sacarme un 400 de tirada, le restamos un -100 por apuntar al ojo, y lo
+nerfeamos hasta 280, y tenemos un ataque de 280 al ojo.</p>
+</div>
+<div class="paragraph">
+<p>Contraataque de proyectiles
+A menos que estéis a bocajarro nada de nada.</p>
+</div>
+<div class="paragraph">
+<p>Alcance de las armas
+Las armas tienen un rango efectivo, en el cual funcionan bien, a partir de ahí pues ya
+no. En términos de juego tendrían un -30 al ataque y daño a la mitad. Esta distancia
+depende de la fuerza del personaje, o en el caso de algo como una ballesta, del bono
+de fuerza de la ballesta, puesto que la del personaje no influye. Ojo, si tenéis fuerza 13
+e inhumanidad, partís un arco a menos que sea de buena calidad. Vaya lo que me
+reiría.</p>
+</div>
+<div class="paragraph">
+<p>Cosas de la iniciativa
+Si a dos personas los separa un 25 o menos en turno, pueden dispararse mutuamente,
+esto se debe a que el proyectil aun no llego para hacer daño.
+Además, si estais preparados para disparar vuestro turno será equivalente al de
+desarmado, esto es +20.</p>
+</div>
+<div class="paragraph">
+<p>Problemas de los proyectiles.
+Os leéis la página 94 para verlos todos, pero necesitamos una buena tirada para que
+hayáis apuntado bien incluso si pasáis el control de ataque y defensa. Y también cosas
+como la niebla, objetivos en movimiento, etc. Os imponen penalizadores.</p>
+</div>
+<div class="paragraph">
+<p>Defensa contra proyectiles
+Es complicado y tendréis penalizadores.</p>
+</div>
+<div class="paragraph">
+<p>Índice de recarga y cadencia de fuego
+Disparadas
+Tenéis que recargar ciertas armas para usarlas, un índice de recarga de 1 implica que
+podeis usarla todos los turnos, uno de 2 que un turno si y el otro se recarga. Parecido a
+los ataques adicionales por cada 100 puntos de ataque o de trucos de manos (el más
+alto), el personaje puede bajar en uno ese contador aplicando un -30 acumulable a los
+ataque pertinentes. Podríais usar un arma con índice de recarga 2, cada turno si tenéis
+un -30 siempre, o disparar más de una vez con una de índice 1.
+Arrojadas
+Para estas usamos la cadencia de fuego que indica como de fácil es lanzarlo. Indica la
+cantidad necesaria de habilidad de ataque para lanzar 1 de ellos. El número máximo
+que podemos lanzar por tuno se calcula con la división entera entra la habilidad de
+ataque del personaje entre la cadencia de fuego del objeto. Los objetos que no
+aparezcan en el listado tienen una candencia de 80 si son medios o pequeños y de 120
+si son grandes. Un personaje puede lanzar siempre una cosa al menos por turno.</p>
+</div>
+<div class="paragraph">
+<p>Críticos
+Cuando alguien pierde la mitad de sus puntos de vida actuales tiene que pasar un
+control de crítico. El agresor tira un d100 y lo suma al daño hecho ese será el nivel de
+crítico (no hay tirada abierta), si pasamos de 200, lo que haya por encima de eso se
+reduce a la mitad. 260 pasa a 230. El que se comió el crítico, tiene que superar una RF
+contra eso, si la pasa pues todo guay, ahora si no la pasa, pues igual acaba como Rafa.</p>
+</div>
+<div class="paragraph">
+<p>Efectos de los críticos
+Vayamos por partes, o mejor dicho por casos:
+-</p>
+</div>
+<div class="paragraph">
+<p>-</p>
+</div>
+<div class="paragraph">
+<p>-</p>
+</div>
+<div class="paragraph">
+<p>-</p>
+</div>
+<div class="paragraph">
+<p>La falla por 50 o menos: ha sido un buen golpe y duele, puede dejar una buena
+contusión o cicatriz. Impone un penalizador a toda acción del nivel de fracaso,
+es decir, por lo que no lo pasó que desaparece a ritmo de 5 por asalto.
+La falla entre 51 y 100: cosa seria, te han roto huesos, dislocado algo. Te comes
+el penalizador del apartado anterior, pero solo la mitad desaparece a ritmo de
+5 por asalto, la otra mitad cuando se recupere. Si el ataque no fue apuntado
+hay que localizar el crítico, tirando un d100. Si os pegan en la cabeza,
+inconscientes.
+La falla entre 101 a 150: empezad a rezar. Os han destruido una parte del
+cuerpo, el penalizador funciona como en el apartado anterior, hay que ubicar el
+impacto también con el método anterior de no ser un ataque apuntado. Si es
+una extremidad, será totalmente destruida. Si es un punto vulnerable estáis
+muertos.
+La falla por más de 150: si estáis rezando Dios no os oye. Como el caso anterior,
+pero caéis inconscientes independientemente de donde os hayan golpeado, y</p>
+</div>
+<div class="paragraph">
+<p>morís en número de turnos equivalentes a vuestra Constitución si no recibís
+atención médica (MUY DIFICIL 140)
+Los penalizadores a menos que vuestro nivel de regeneración tenga algo que
+objetar se van a ritmo de 5 por semana.</p>
+</div>
+<div class="paragraph">
+<p>Punto vulnerable
+Un golpe apuntado a un punto vulnerable precisa de hacer sólo un 10% de la vida
+máxima para forzar al atacado a pasar un control de crítico.</p>
+</div>
+<div class="paragraph">
+<p>Hablemos de Pifiar
+Nada que no sepáis espero.</p>
+</div>
+<div class="paragraph">
+<p>Defensa
+La caigas, y vuestro nivel de pifia se resta de vuestra defensa, si tenéis mas de un 80,
+pues igual os pasa algo como perder el arma.</p>
+</div>
+<div class="paragraph">
+<p>Atacar
+Falláis el golpe, no podéis realizar más acciones activas. Si el rival quiere, os hace
+contraataque y suma vuestro nivel de pifia, que si es mayor que 80 pues igual os trae
+alguna desgracia como tropezar.</p>
+</div>
+<div class="paragraph">
+<p>Turno
+Estáis empanados y os caen penalizadores.</p>
+</div>
+<div class="paragraph">
+<p>Lo sobrenatural el combate
+Aquí vamos…</p>
+</div>
+<div class="paragraph">
+<p>Cosas de la magia
+Los hechiceros no hacen parrys, tiene que ser su turno para atacar. Usan Proyección
+mágica como ataque y defensa. No son afectados por las reglas de combate de hasta
+ahora. Pueden lanzar tantos conjuros como les deje su zeón, ignoran las situaciones
+especiales de combate excepto ceguera. No se apunta con conjuros exceptuando
+conjuros de ataque. Los penalizadores a la acción si que afectan a la proyección.
+Si acumulas magia o la usas, cuenta como acción activa y el resto tienen penalizador,
+tu ACT se va a la mitad.</p>
+</div>
+<div class="paragraph">
+<p>Psíquico
+Un personaje puede atacar y utilizar sus poderes en el mismo asalto, pero
+aplicará un –25 a su potencial psíquico por cada acción activa adicional que
+realice previamente en el asalto. Si quiere además atacar en un asalto en el
+que usa sus poderes, deberá restar también un–25 a su habilidad ofensiva. En
+ninguno de los dos casos el personaje aplicará negativos a su Proyección Psíquica
+por realizar acciones adicionales.</p>
+</div>
+<div class="paragraph">
+<p>Los escudos sobrenaturales
+Os defendéis con vuestra proyección, e ignoráis casi todos los penalizadores. El
+bonificador a contra no aplica para proyección, pero si atacáis cuerpo a cuerpo si. Los</p>
+</div>
+<div class="paragraph">
+<p>escudos se rompen si reciben el suficiente daño, si se rompe un escudo en una defensa
+el personaje se come el golpe automáticamente, pero sólo con el daño sobrante de la
+ruptura de escudo. No se pueden combinar con parada o esquiva</p>
+</div>
+<div class="paragraph">
+<p>Cubrir a un tercero
+Aunque un personaje dotado de habilidades sobrenaturales no puede protegerse
+con un escudo y defenderse físicamente a la vez, si puede utilizar un escudo para
+defender a un personaje distinto de su creador. Dicha acción no es pasiva, así
+que quien lo use debe haberlo colocado con anterioridad al ataque sobre el
+sujeto que desea proteger, o bien haber reservado su iniciativa en previsión. Si
+se utiliza esta segunda opción, debe declarar su intención antes de que se realice
+ninguna tirada. El personaje aplicará un penalizador de –40 a su Proyección
+cuando utilice sus barreras defensivas con esta finalidad.
+Si el escudo no consigue detener el impacto, el ataque seguirá su curso
+normalmente y el agredido podrá seguir defendiéndose.</p>
+</div>
+<div class="paragraph">
+<p>Los ataques sobrenaturales
+Los ataques sobrenaturales pueden tener una serie de características especiales
+dependiendo de los mismos, no puedo simplificarlo está en la página 98 y 99.</p>
+</div>
+<div class="paragraph">
+<p>Subterfugio en combate
+Seamos ratillas.</p>
+</div>
+<div class="paragraph">
+<p>Ataques asesinos
+Si pasáis sigilo contra advertir o buscar del rival podéis tener un +170 al atacarlo por la
+espalda, no es preciso matarlo, podéis engatillarlo o lo que sea. (Se suma el
+penalizador de sorpresa como bonificador para vosotros para ser más justos.) Si esto le
+pasa a un mago, ki , etc. Tiene a la mitad la acumulación o potencial, a menos que
+estuviese alerta.
+Además, se puede hacer un ataque sigiloso, restringiendo la habilidad de ataque al
+valor de la secundaria sigilo, de ganar el enfrentamiento, consigue su objetivo sin
+hacer ningún ruido, y no alertaría a otras personas a menos que obviamente lo viesen.
+Ocultarse luchando
+No os da, en serio, no os da. Esto consiste en esconderse en mitad del combate y tiene
+fuertes penalizadores para hacerlo, tiene que estar el turno en que lo hace y el
+siguiente inmóvil para que no lo detecten.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="footer">
+<div id="footer-text">
+Last updated 2019-07-26 21:48:48 +0200
+</div>
+</div>
+</body>
+</html>

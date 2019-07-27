@@ -1,0 +1,700 @@
+= EL Doc
+Luis Presa Collada <lpbest1777@gmail.com>
+
+:toc: left
+:toc-title: Índice
+:doctype: book
+
+Espero que lo entendáis todo.
+
+== Las tiradas
+Normalmente me tendréis que tirar d100 o d10, pero hay ciertas mecánicas que debéis
+conocer.
+
+=== La tirada Abierta
+Cuando se saca 90 o más en una tirada (sólo dado), se vuelven a lanzar los dados y el
+resultado se suma al resultado total, si en esta segunda tirada se saca 91 o más, pues
+otra vez, si en la siguiente sale 92 o más, etc. Un resultado de 100 es siempre abierto.
+
+=== Pifiar
+En anima pifiais con 1, 2 ó 3, aunque por movidas externas estos números pueden
+cambiar, por ejemplo con magia. Si pifiáis tenéis que tirar un d100 para ver vuestro nivel
+de pifia (no se admite tirada abierta en esta tirada), cagarla con un 100 es horriblemente
+peor que cagarla con un 1. Ejemplo: Pifiar con un 1 puede suponer que se os cae el arma,
+con un 100 igual os apuñalais a vosotros mismos.
+
+=== Maestría
+Si tenéis 200 o más en una habilidad, el 3 no es pifia para vosotros.
+
+=== Controles
+Cuando yo os pida hacer una tirada estamos haciendo un control, tenéis que sacar más
+de lo que os pido para superarlo, o sacar cuanto más mejor cuando os lo pido al aire.
+En controles de resistencias no tenéis tiradas abiertas, pero son superados
+automáticamente si de base tenéis 20 más de lo necesario para superar el control
+En controles de características enfrentadas (se hacen con d10), si os sacáis mas de 4 en
+la característica principal, cada punto sobrante cuenta el doble. EJEMPLO: X se enfrenta
+con fuerza a Y con destreza. Fuerza de X = 13, Destreza de Y = 6. 13-6=7 7-4=3 , 3
+puntos de X valen el doble así que al final sería un control enfrentado tal que:
+Fuerza de X + esos 3 puntos + su tirada, frente a Destreza de Y más su tirada.
+
+== Secundarias y sus movidas
+=== Pasivas
+Hay habilidades que estais usando sin daros cuenta, y es el master quien debe haceros
+el control. Como se verá mas adelante es importante diferenciar entre algo activo y algo
+pasivo.
+
+=== Pifiando en secundarias
+Os adjunto algo del propio libro:
+[quote]
+____
+1 a 50: Si la Pifia es inferior a 50, la acción simplemente no
+tiene éxito. Una persona que trata de moverse en silencio
+tropieza causando un sonoro ruido, o alguien que trata de
+identificar una planta no tiene ni una remota idea de su
+procedencia o efectos.
+51 a 95: Representa que la acción fracasa terriblemente
+y de un modo perjudicial para el personaje. Al realizar
+sus acrobacias cae haciéndose daño en una pierna, o al
+buscar una puerta oculta piensa que existe una donde
+no la hay.
+96 a 100: Es un fracaso absoluto y trágico. El personaje
+confundirá un antídoto con un veneno o hundirá su
+barco mientras intentaba sacarlo del puerto.
+____
+
+=== Especializarse
+Habrá habilidades en las que podáis especializaros y obtendréis un bonificador en esa
+subrama de la habilidad, pero un penalizador en todo lo demás.
+
+=== Habilidades de Conocimiento
+Si hay que saber, no es que tengáis el penalizador de -30, es que no tenéis ni zorra y no
+podéis tirar.
+
+=== Petición
+Leeros las habilidades que tenéis. Y cómo se usan.
+
+== Entre la Vida y la Muerte
+Vayamos al grano, podéis morir en las siguientes situaciones:
+
+- Superáis al quíntuple de vuestra constitución como numero negativo de PV
+- Crítico letal (Los vemos más adelante en el apartado de Combate)
+- Fallar por más de 60 la RF especificada en “La línea entre ambos estados”
+
+=== Desangrarse
+Si tenéis hemorragias por la razón que sea perderéis un PV cada minuto. (Si tenéis dos
+heridas, me parece racional que sean 2, 3 hemorragias 3, etc.) Podéis parar esto con un
+control de medicina en fácil (DIF 40).
+
+=== La línea entre ambos estados
+Mientras estéis por debajo de 0 PV está en estado entre la vida y la muerte. Tiene que
+tirar cada hora RF 120, para estabilizarse o perder otro punto de vida. Si se estabiliza se
+queda a 0 puntos. Se puede estabilizar a otro con un control de medicina MEDIO (DIF
+80)
+Estabilizarse hace que caiga un penalizador de -60 a toda acción por parte del herido,
+que desaparecerá a lo que dicte su nivel de regeneración.
+
+=== El Llamamiento
+No suena bien, ¿eh? Una vez muertos vuestra alma se queda de parranda por este
+mundo, tantas horas como poder tenga. Dependiendo del alma se puede quedar en el
+sitio o puede vagar.
+**Nota**: Algunas cosas sobrenaturales pueden revivir a alguien si su alma no ha recibido el
+llamamiento aún.
+
+== La Recuperación
+Bueno, a leer, que palos os van a caer.
+Hay un nivel de regeneración que os corresponde según vuestra constitución. En función
+de esto va la reducción de negativos (Como el que os pone el llamamiento) que perdéis
+al día y la vida que os curáis. Podéis beneficiarios de cualquier nivel de regeneración,
+exceptuando 19 y 20 que son para seres de gnosis 40 y 45. De paso, a partir del nivel 5
+obtenéis capacidades especiales.
+
+== Capacidades físicas
+Tipo de movimiento
+Igual a tu agilidad, expresa como de rápido eres y cuanto te puedes mover.
+
+=== Índice de peso
+Igual a vuestra fuerza, expresa cuanto peso podéis levantar sin problemas y cuanto de
+máximo. Es importante destacar la siguiente frase del libro: La primera columna
+representa cuánto carga o alza sobre su cabeza sin problemas. Si un sujeto lleva encima
+o levanta más de esta cantidad, disminuye en dos su Tipo de movimiento y pierde un
+punto de Cansancio adicional cada media hora que viaje con el sobrepeso.
+
+=== Cansancio
+Igual a constitución. Podéis gastar estos puntos para mejorar vuestras acciones físicas
+sobre esforzándoos hasta un máximo de 2 por tirada. (Cada uno da un +15) Tenéis que
+declararlo antes de las tiradas. En controles de característica dan +1 en lugar de +15. Y
+para magos y guerreros de ki, cada punto invertido aumenta durante ese asalto +15 su
+ACT, o confiere un bono de +1 a todas sus Acumulaciones de Ki.
+
+==== Agotarse
+Cuando bajéis a 4 puntos de cansancio empiezan los penalizadores a toda acción.
+
+=== Desplazamiento y cansancio (No voy a ser nazi)
+
+[quote]
+____
+Naturalmente, cuando alguien se desplaza va extenuándose gradualmente.
+A continuación podéis ver una referencia de cómo se agota un personaje en
+relación a su velocidad:
+
+**Al paso**: El personaje camina normalmente. Como media, pierde un punto
+de Cansancio cada seis horas.
+
+**Marcha**: Es una velocidad un poco más rápida, un trote ligero pero sin llegar
+a correr. Como media, el personaje sufre la pérdida de un punto de Cansancio
+cada dos horas de marcha.
+
+**Corriendo**: El personaje corre sin esforzarse al máximo. Se desplaza dos
+tipos de movimiento menos de lo que le permite su límite, perdiendo la cantidad
+de Cansancio que determine un control de Atletismo en la Tabla 8. Como
+media, un alguien que se mueve a esta velocidad pierde un punto de cansancio
+cada cinco minutos.
+
+**Movimiento máximo**: Es la máxima velocidad a la que alguien puede
+desplazarse. Usa su velocidad al completo, pero resulta extremadamente
+agotador, por lo que el personaje debe de realizar un control de Atletismo
+usando la Tabla 8 para determinar cuantos puntos de Cansancio pierde por
+asalto al usar esta clase de movimiento. Como media, un personaje pierde un
+punto de cansancio cada dos asaltos que se mueva a esta velocidad.
+____
+
+== Tablas de Armas y las armas
+De primeras sólo sabéis usar un arma, tenéis que pillar una tabla para saber usar otras.
+Las compráis y pum, ya sabéis.
+Aparte sobre las armas, cada una tiene un conjunto de reglas, aseguraos de entender
+que significa cada una.
+
+== Hablemos del ki, artes marciales y los ars magnum
+El ki es realmente simple, sería una versión simplificada de la magia y pensada para
+luchadores. Sería algo al estilo Dragon Ball o Naruto. He dicho simple en primera
+instancia, para un uso básico, pero claro, luego tiene sus movidas interesantes que no
+relataré aquí puesto que ninguno de vosotros tiene ni siquiera un poco de Lore para
+entender cómo va toda esta vaina.
+
+=== La moneda de cambio
+En este caso esa sería el CM, Conocimiento Marcial. Se obtiene por todas las clases en
+mayor o menor medida al subir de nivel o con la dominación de ciertas artes marciales.
+Con esto podéis adquirir habilidades del ki o técnicas de dominio, y ars magnum,
+aunque estos últimos son una de las movidas que es despatarrantemente extraño que
+conozcáis y más aún que las aprendáis.
+
+=== El combustible
+Pues el ki, se regenera a ritmo de 6 por hora, 1 cada 10 minutos. Jugamos con la regla
+de unificación de ki por eso es así, no os voy a hacer la putada de no jugar con esa
+regla. Aunque usándola se bufa este apartado notoriamente.
+
+=== ¿Cómo hacemos cosas?
+Funciona de forma parecida a la magia, acumulamos ki si lo necesitamos y luego
+activamos lo que haya que activar. Si hacemos algo más en el turno pues la
+acumulación se va a la mitad.
+
+=== Opciones para gastar CM
+Como os dije antes hay varias opciones, que serían la siguientes:
+
+- Habilidades del ki: Es un árbol de habilidades (siento ponerme un poco nazi, pero ninguno de vosotros tiene lore para conocer aquí, así que tardaréis un
+poco en aprender)
+- El némesis: Como opuesto al ki, el némesis provee un árbol de habilidades también.
+- Técnicas de ki: Estas técnicas se activan y suelen servir principalmente para combate, son super boosts temporales o momentáneos. Se activan como la magia (véase apartado como lanzar un conjuro), y se aprenden como el psíquico, debemos conocer una técnica de menos nivel para dominar uno de
+nivel superior.
+- Sellos de invocación: Es muy caro para vosotros, por ahora, pero con ellos se puede invocar seres tras haber pactado con ellos, como en Naruto.
+
+==== Ars Magnus
+Esta es otra de las formas para gastar CM, pero también PD, son estilos de combate o
+cosas algo locas. En un principio me parece óptimo no usarlos por el momento, pues
+tendría que introduciros otra movida conocida como Legados de sangre (Aunque sólo
+en algunos casos), que complicarían un poco la creación de personajes. En contra de la
+regla general, podemos negociar si al subir de nivel queréis coger uno por la regla de
+liberación de puntos de creación, pero bueno, eso es hablarlo. Cómo decía hay varios
+tipos de ars magnus, las normales, las locas, y las armas imposibles que necesitan
+tener inhumanidad para siquiera empuñarlas. Mandaré uno por el grupo para que lo
+veais.
+
+=== Artes marciales
+La dominación de un arte Marcial supone un coste de PD, estamos usando las reglas de
+Dominios del Ki, así que la explicación del libro básico debe ser ignorada. Aprender una
+os da competencia con combate desarmado aparte de los beneficios que os otorgue el
+arte marcial. No es posible combinar algunas cosas, estad atentos.
+
+== La Magia
+Llegamos a lo gordo. Realmente hay varios teoremas de uso de la magia, pero no os voy
+a engañar, me parece una señora chapa, sería mas “interesante” si se pudiesen combinar, pero como dice el libro un mago no puede cambiar su concepción de la magia así como así. 
+Dicho esto procedo a explicaros el teorema tradicional. Si bien es cierto, uno
+de esos sistemas del Arcana se considera la forma primigenia de la magia, si en algún
+momento queréis hacer alguna cosa extraña puede, recalco, puede, que os lo tire por
+ahí.
+
+=== La moneda de cambio
+Vuestra moneda de cambio aquí es el Nivel Mágico, con el que podéis desarrollar vías o
+hacer lo que os de la gana realmente, porque podéis usarlo también para rellenar el
+Arcana Sephirah. Que tengáis un nivel mágico de 400 no significa que lo estéis usando
+todo, según el juego tenéis que crecer, si un hechicero llega a su máximo, y no puede ir
+más allá pues carece de sentido
+
+=== El Combustible
+El combustible para hacer las cosas aquí es el Zeón, con ello podéis activar todo tipo de
+conjuros y hacer muchas cosas muy locas. desde una luz hasta una bola de oscuridad
+que destruye enemigos con abiertas de 460. Vuestro ACT a menos que tengáis algo
+extraño es lo que regeneráis al día.
+
+=== ¿Cómo lanzamos un conjuro?
+Sea lo que sea que quieres hacer, tienes que acumular magia, y acumulas tanta por turno
+como ACT tengas (Acumulación Por Turno, vaya, que sorpresa), cuando tengas la
+suficiente para lanzar un conjuro en el grado que quieras pues lo consumes para activar
+el conjuro, **OJO ACTIVAR NO ES LANZAR**. Veamos las dos formas de ACTIVAR:
+
+- Magia pura: Acumuláis zeón, sin más, a la espera de hacer algo, pero si paráis un
+turno pues perdéis toda la acumulación 10 de zeón de la reserva general en el
+proceso.
+- Preparar conjuro: Declaráis el conjuro que preparáis y el grado. Toda vuestra
+acumulación va para él (os quedáis un poco en bragas si, pero tiene su parte
+buena), una vez lo tengáis preparado, podéis aguantarlo un numero de asaltos
+equivalente a vuestro atributo de poder, si decidís no lanzarlo, pues el zeón
+vuelve a la reserva perdiendo 10 en el proceso. Cuando acabáis de prepararlo
+podéis preparar otro o acumular magia pura. Importante: Algunos magos tienen
+a veces bonos a su ACT al usar ciertas vías. Dichos bonificadores sólo pueden
+aplicarse cuando se preparan para lanzar un conjuro concreto, y no si acumulan
+magia pura.
+
+=== Os hacen daño mientras acumuláis
+RF contra el doble del daño sufrido o perdéis todo lo acumulado (los que estén
+preparando conjuro determinado tienen un +40), si no llegáis al daño sufrido en la
+resistencia perdéis también el zeón.
+
+=== Proyección mágica (LANZAR HECHIZOS)
+Con esta habilidad se mide cómo de bien enfoca el personaje sus poderes, es el ataque
+y defensa de los hechiceros. Indica su alcance máximo. Sea cual sea la situación tiene un
++40 a la tirada si está en contacto directo con el objetivo.
+
+==== ¿Y qué pasa si se pifia?
+Si se pifia el lanzamiento de un conjuro pues se pierde el zeón y ya, pero como el grado
+de pifia sea disparatadamente alto igual os tiráis un “Crear luz” dentro de los glóbulos
+oculares y quedáis ciegos. Si se pifia en el uso de un conjuro mantenido, el nivel de pifia
+se resta a la proyección magia del hechicero, como en un escudo por ejemplo.
+
+==== Desequilibrio
+Podéis poner hasta un +30 en la proyección mágica ofensiva y consecuentemente un 30 en la defensiva y viceversa. Se puede manipular a un ritmo de 10 puntos por nivel.
+
+=== Choquemos conjuros
+Se puede estampar una descarga mágica contra otra, normalmente conjuros de ataque.
+No me voy a poner técnico con esto.
+
+=== Conjuros
+Hemos llegado a la vaina poderosa. Cada conjuro tiene 4 grados, a mayor grado, mayor
+coste, mayor efecto y mayor requisito de inteligencia para lanzarlo.
+
+==== ¿Cómo aprendo conjuros?
+Pues tienes dos formas, puedes meter puntos de nivel mágico en una vía o seleccionar
+conjuros. Ambos métodos son perfectamente combinables. Seamos racionales, no
+podéis aprender cosas de la nada, no voy a ser nazi, pero no aprenderéis el conjuro
+teletransporte así por la de buenas.
+
+===== Vía
+Si metes puntos en una via, subes su nivel, relación 1:1, y conoces tooooodos los
+conjuros de nivel menor igual al tuyo en la vía. Cuando pone libre acceso, debes ir al
+apartado de libre acceso y seleccionar un conjuro para poner ahí o seleccionar una
+subvía mágica.
+
+===== Selección de Conjuros
+Este método es más caro, pero más libre, puedes aprender lo que te de la gana, conjuros
+sueltos.
+
+=== Alta Magia y Magia Divina
+Conjuros muy tochos, que solo seres con gran influencia en la realidad pueden lanzar.
+80 para arriba en las vías
+
+=== Tipos de Conjuros
+Mirad, no puedo resumiros esto, os toca leer, en el propio libro en la (CORE) página 120
+lo trae muy simple.
+
+== Psíquico
+A ver, usemos la cabeza, juas juas juas. Se parece mucho a la magia.
+
+=== La moneda de cambio
+Los CV (Consumos de Voluntad). Tienen dos formas de usarse:
+
+==== Permanentemente
+Puedes gastar un CV para siempre para obtener uno de los siguientes beneficios:
+
+- Abrir una disciplina
+- Dominar un nuevo poder mental nuevo (Tiene que ser uno de una disciplina
+abierta y debemos conocer uno de nivel inferior)
+- Incrementar el potencial Psíquico
+- Fortalecer un poder (Le damos un +10 en la tirada de potencial psíquico)
+- Adquirir un innato: Con eso puedes mantener poderes sin tener que estar
+haciendo solo eso. Cuesta 2 CVs
+
+==== Temporalmente
+Los usos temporales son mejoras momentáneas a cualquier cos psíquica, están en la
+página 212 del libro, resumidas, y pueden hacer muy dinámico a un mentalista.
+
+=== ¿Cómo tiro cosas?
+La segunda parte es como la magia, proyección psíquica, para proyectar el poder, medir
+distancia, su uso, el combate, etc etc. La primera parte varia. Un personaje puede usar
+todos los poderes mentales que quiera, repartiendo su potencial psíquico entre todos
+ellos (mínimo de 10 por poder) Y luego por cada uno tiene que hacer una tirada de un
+d100, Revisamos la tabla del poder y vemos con cuanta fuerza lo activa o si falla. Si falla
+sufre fatiga mental, que quita cansancio. (Los poderes psíquicos son buenos, no gastan
+nada, pero ojo con el cansancio si te pega mucho de golpe)
+
+== Convocatoria
+La convocatoria es el poder de traer y controlar seres entre mundos ligados a lo
+sobrenatural. No es preciso tener el DON para usar estas habilidades, en cierto modo
+son como secundarias.
+
+=== Habilidades de Convocatoria
+Hay 4 habilidades de convocatoria, en un mismo turno se pueden usar las 4, pero sólo
+un control de cada una de ellas.
+
+- Convocar: Traes seres a este mundo
+- Dominar: Controlas a seres
+- Atar: Atas una criatura dentro de un contenedor, congelando su existencia.
+- Desconvocar: Expulsas seres del mundo.
+
+=== La llamada
+Tenéis que tener idea de lo que queréis traer al mundo u os coméis penalizadores.
+
+=== La dominación
+Una vez se domine a una criatura con un control exitoso, esta cae bajo control de su
+dominador. Aunque esta conserve la conciencia no puede desobedecer a su dominador
+y si quiere liberarse (spoiler sí), cada hora o cada vez que le llegue una orden opuesta a
+su naturaleza el controlador deberá superar de nuevo la tirada de Dominar pero sin falta
+de gastar zeón, pero claro, puede conspirar para liberarse sin incumplir las órdenes. El
+controlador realmente sólo sabe una posición aproximada de la criatura, pero no lo que
+hace. Si el controlador toma zeón de la criatura, técnicamente no debería poder a menos
+que tenga el Don, el vínculo se rompe.
+
+=== El lazo de atadura
+Un conjurador puede decidir atar una criatura a un objeto, a efectos prácticos sería
+transformar la criatura en mas espiritual y encerrarla en un contenedor. La criatura sólo
+puede comunicarse con quien toque el contenedor si está dentro. Como acción pasiva
+el conjurador puede sacarla o meterla en el contenedor sin pagar coste alguno, pero la
+acción se realiza realmente al principio del siguiente asalto. Supongamos que la criatura
+estaba dominada antes de esto, pues esta vaina rompe un poco el juego. Dicha criatura
+no puede librarse de la dominación, en ninguna circunstancia y para ser afectada por
+otro conjurador tiene que estar fuera de su contenedor. Mantener el lazo de atadura
+cuesta zeón diariamente y mientras esté activo al estar la esencia de la criatura
+congelada no puede subir de nivel.
+
+=== Expulsar del mundo físico (¡Vade retro!)
+Lo contrario a convocar, si pasas la dificultad y gastas el zeón puedes sacar a una criatura
+del mundo “material”. Además el numero de unidades por los que pases la tirada son el
+número de días que la criatura deberá esperar para regresar al mundo si puede hacerlo
+por sí misma.
+
+=== Regeneración zeónica de seres atados
+Dado que su esencia está estancada no pueden ser afectadas por el flujo de almas y
+tampoco regenerar zeón, su regeneración es el coste de zeón que su señor paga cada
+día, el cual absorben.
+
+=== Hablemos de los Familiares
+Esas cositas super monas que os ayudan
+
+==== Unión
+Para tener un familiar ambas partes deben estar de acuerdo (o una debe ser dominada
+para dar consentimiento je je je), ambas partes no pueden sacarse más de un nivel. Para
+realizar la unión, el convocador debe superar una dificultad de atar como si la criatura fuese de dos niveles más y pagar 10 veces el coste de zeón que costaría. (Un convocador
+puede hacer esto por dos terceros).
+Cada día el maestro del familiar debe gastar la mitad de los puntos de zeón de lo que
+costaría tenerlo atado. (Ojo, es importante mantener el vínculo)
+
+==== Sus poderes y sus consecuencias
+Esto funciona casi igual que una criatura atada, pero maestro y criatura comparten parte
+de su alma, y por ello la entidad si puede crecer. Subirá de nivel cuando lo haga su amo,
+y puede gastar esos 100PD según el Capítulo 26 (Preferiría veros mirar, porque ese
+capítulo está cerca de cosas muy nazis en el libro del máster)
+Ambos tienen constancia de posición del otro, y pueden sentir a través del otro. Los
+brujos pueden realizar conjuros con el ACT a la mitad a través de la criatura. Los
+familiares no recuperan puntos de zeón, pero si que pueden coger parte de la
+regeneración del maestro si este los deja, y también pueden funcionar como un
+contenedor.
+No os digo toda la movida de tiradas, pero cada vez que uno sufra daño el otro tiene que
+pasar una RF o comerse penalizadores, caer inconsciente, etc.
+
+==== Romper el lazo
+Voluntariamente no se puede, si uno muere y el otro sobrevive, pues se puede tener
+otro lazo y todo chupi. Ahora supongamos que el personaje no paga el zeón necesario
+por lo que sea, cada uno se come un -10 acumulable al día y a la semana se rompe el
+vínculo y el personaje pierde 1 punto de PODER irreversiblemente.
+
+==== Estancar al Familiar
+El maestro puede decidir estancar la esencia del familiar, como en la atadura, para que
+este no suba de nivel. Se puede hacer cuando ya no tienes zeón suficiente para pagar a
+niveles muy altos, mediante esto, familiar y criatura pueden separarse por mas de 5
+puntos de presencia (o lo que es lo mismo por más de un nivel).
+
+=== Invocación
+Lo marco como un apartado nuevo, pero es preciso conocer el apartado anterior de
+Conjuración, al menos la habilidad convocar. Las invocaciones son criaturas que vienen
+hacen un efecto y se piran.
+
+==== Ceremonia de invocación
+Esto funciona igual que convocar, pero al realizar una invocación por primera vez, esta
+propone un pacto y se pira. Cuando el personaje crea haberlo completado, la puede
+invocar de nuevo para sellar el pacto. Si lo cumplió, pues invocación adquirida, pero si
+no lo cumplió… la invocación rechazará su llamada de aquí en adelante y nunca podrá
+volver a llamarla. No hay límite al numero de invocaciones, pero no se puede pactar con
+opuestos, en el caso de los arcanos, no se podría pactar con La Justicia y luego con La
+Justicia Inversa. De aquí en adelante al invocarla hará su eecto
+
+== COMBATE (QUE EMPIECE LA SALSA, DIGO… EL SALSEO)
+=== Iniciativa
+Todos tenéis una característica de turno, que varía en función de si usáis arma,
+armadura, etc, pues un d100 + eso, numero más alto tiene prioridad. Lo normal es que
+vayamos por orden, pero un jugador puede decidir esperar, y usar su turno más
+adelante. J1: 100 J2:90 J3:80.
+J1 y J2 deciden esperar. El primero será entonces J3. Después, J1 y J2 quieren seguir
+esperando, en este caso, tendrá su turno antes el más lento, porque el más rápido
+quiere esperar. Y esto nos lleva a un orden tal que J3, J2, J1.
+
+==== Sorpresa
+La sorpresa es pillar a otro personaje desprevenido, es decir que le cueste reaccionar.
+Puede obtenerse de varias formas y lo que hace es imponer un penalizador de -90 al
+sorprendido contra toda acción que haga contra la persona que lo sorprenda. Lo
+incluyo en este punto porque si un jugador saca más de 150 en turno respecto a otro,
+lo sorprende. Si espera, no habrá sorpresa, pero, podrá interrumpir su turno (SISI,
+INTERRUMPIR), incluso si el sorprendido ya ha lanzado los dados para una acción.
+
+=== Acciones
+Hay dos tipos, activas y pasivas, para las activas tienes que tener turno, para las pasivas
+no. Sólo se puede declarar una acción de cada tipo, inclusive el atacar. Tenéis un
+número máximo de acciones activas, pero no tenéis por qué usarlas todas. De hecho,
+por cada una que uséis imponéis un penalizador de -25 a las siguientes. 1ª 0 , 2ª -25,
+3ª -50, …
+
+=== Algunas aclaraciones
+Podéis moveros hasta una cuarta parte de lo que diga vuestro tipo de movimiento
+como acción pasiva, sino se considera una acción activa. E impone -25 a las siguientes.
+Normalmente una secundaria requiere tener el turno, si por alguna razón se necesita
+un control enfrentado contra otro jugador, pues el otro tiene derecho a tirar sin
+consumirle acción.
+
+=== Bases del combate
+Habilidad de ataque, que va por destreza. Defensa se subdivide en: parada, que va por
+destreza, y esquiva que va por agilidad. Atacar es activa y defender es pasiva.
+
+=== Combate cuerpo a cuerpo
+Calculamos el ataque final tirando un d100 y añadiéndolo a la habilidad ofensiva, y lo
+restamos a la defensa final (tmb añadiendo un d100 a la habilidad defensiva).
+Evaluemos posibles resultados:
+
+- La resta queda positiva: el ataque impacta y le quita la posibilidad de turno en
+lo que queda de asalto, si ya lo tuvo pues nada. Luego el numero positivo que
+quede se mira en la tabla de daño que nos dará el porcentaje de daño que
+come el defensor.
+- La resta queda negativa: El ataque falla y el rival puede contraatacar. Puede
+hacerlo siempre que aún pueda atacar. Esto es que pueda hacer acciones
+activas aún, y que le queden ataques (si va a hacer ataques adicionales (luego)
+me lo tendría que decir aquí si es la primera vez que va a atacar.) (Sólo podeis
+pegar un golpe de vuelta). Y a vuestro ataque se suma lo que ponga en la tabla
+de daño.
+
+==== Situaciones en Combate
+No os voy a contar todas las que hay (página 88), pero si os digo que son un conjunto
+de penalizadores y bonificadores. No es lo mismo defender un ataque que viene de
+frente que uno que viene de espaldas. Así como tampoco es lo mismo atacar a alguien
+que te ha derribado
+
+==== Defensas adicionales
+No es lo mismo defender un ataque que 5, (un asalto dura 3 segundos, eso sería un
+poco la ostia). La segunda parada tiene un -30, las siguientes un -20 acumulativo hasta
+-90.
+
+==== Ataques adicionales
+Tenéis derecho a un ataque adicional por cada 100 puntos en ataque que tengáis.
+Debéis declarar que vais a hacerlos antes de tirar dados obviamente, y podéis designar
+objetivos, guardarlos para contraataques, como veais. Es importante que sepáis que
+por cada ataque adicional que declaréis imponéis un penalizador a todos ellos,
+depende del tamaño del arma.
+P:-20 M:-30 G:-40
+Y me resta decir que si os quitan la acción por alguna razón, perdéis todos esos
+ataques puesto que no podéis atacar.
+
+==== Ataques con armas adicionales
+Supongamos que lleváis un arma en cada mano. Esto os da un ataque adicional, que
+podéis usar para lo que os de la gana, vuestro turno será el más lento de ambas armas.
+Tenéis un -40 a lo que hagáis con el arma “secundaria” o un -10 si sois ambidextros.
+
+==== Ataques específicos
+Existen ciertas maniobras que cualquier persona puede realizar, como tratar de
+desarmar a alguien o derribarlo. Las tenéis a vuestra disposición en la página 90. Una
+de esas maniobras es atacar apuntando a partes del cuerpo, lo cual es bastante
+interesante en ocasiones.
+
+==== Defensas especiales
+Así como hay ataques hay defensas, son sólo tres y las tenéis en la página 91, es
+interesante que sepáis que hay una que consiste en tankear el golpe y no perder la
+acción.
+
+==== Entereza y Rotura
+De esto me encargo yo si eso. No os metáis en esta vaina.
+
+==== Habilidades secundarias en Combate
+Leed este apartado, en serio, leeros este apartado. Página 92
+
+==== Retirarse del combate
+Si tenéis sorpresa frente a vuestros adversarios, podéis iros, si no, estos tienen
+derecho siempre que puedan atacar claro, a un ataque de oportunidad con el
+modificador de flanco contra vosotros. Si no os dan os vais, si os dan pues os quedáis.
+
+=== Combate de proyectiles
+Hay dos tipos de proyectiles, disparados y lanzados, cada uno con sus movidas.
+Lanzados sería algo del palo de shurikens o lanzas, y disparados arcos o ballestas.
+
+==== Habilidad de ataque con proyectiles
+Puedes ser el puto amo y sacarme 8 abiertas, pero un proyectil es lo que es, y su
+habilidad máxima sería de 280, a nivel alto podréis apuntar al ojo de alguien con una
+pistola, sacarme un 400 de tirada, le restamos un -100 por apuntar al ojo, y lo
+nerfeamos hasta 280, y tenemos un ataque de 280 al ojo.
+
+==== Contraataque de proyectiles
+A menos que estéis a bocajarro nada de nada.
+
+==== Alcance de las armas
+Las armas tienen un rango efectivo, en el cual funcionan bien, a partir de ahí pues ya
+no. En términos de juego tendrían un -30 al ataque y daño a la mitad. Esta distancia
+depende de la fuerza del personaje, o en el caso de algo como una ballesta, del bono
+de fuerza de la ballesta, puesto que la del personaje no influye. Ojo, si tenéis fuerza 13
+e inhumanidad, partís un arco a menos que sea de buena calidad. Vaya lo que me
+reiría.
+
+==== Cosas de la iniciativa
+Si a dos personas los separa un 25 o menos en turno, pueden dispararse mutuamente,
+esto se debe a que el proyectil aun no llego para hacer daño.
+Además, si estais preparados para disparar vuestro turno será equivalente al de
+desarmado, esto es +20.
+
+==== Problemas de los proyectiles.
+Os leéis la página 94 para verlos todos, pero necesitamos una buena tirada para que
+hayáis apuntado bien incluso si pasáis el control de ataque y defensa. Y también cosas
+como la niebla, objetivos en movimiento, etc. Os imponen penalizadores.
+
+==== Defensa contra proyectiles
+Es complicado y tendréis penalizadores.
+
+==== Índice de recarga y cadencia de fuego
+===== Disparadas
+Tenéis que recargar ciertas armas para usarlas, un índice de recarga de 1 implica que
+podeis usarla todos los turnos, uno de 2 que un turno si y el otro se recarga. Parecido a
+los ataques adicionales por cada 100 puntos de ataque o de trucos de manos (el más
+alto), el personaje puede bajar en uno ese contador aplicando un -30 acumulable a los
+ataque pertinentes. Podríais usar un arma con índice de recarga 2, cada turno si tenéis
+un -30 siempre, o disparar más de una vez con una de índice 1.
+===== Arrojadas
+Para estas usamos la cadencia de fuego que indica como de fácil es lanzarlo. Indica la
+cantidad necesaria de habilidad de ataque para lanzar 1 de ellos. El número máximo
+que podemos lanzar por tuno se calcula con la división entera entra la habilidad de
+ataque del personaje entre la cadencia de fuego del objeto. Los objetos que no
+aparezcan en el listado tienen una candencia de 80 si son medios o pequeños y de 120
+si son grandes. Un personaje puede lanzar siempre una cosa al menos por turno.
+
+=== Críticos
+Cuando alguien pierde la mitad de sus puntos de vida actuales tiene que pasar un
+control de crítico. El agresor tira un d100 y lo suma al daño hecho ese será el nivel de
+crítico (no hay tirada abierta), si pasamos de 200, lo que haya por encima de eso se
+reduce a la mitad. 260 pasa a 230. El que se comió el crítico, tiene que superar una RF
+contra eso, si la pasa pues todo guay, ahora si no la pasa, pues igual acaba como Rafa.
+
+==== Efectos de los críticos
+Vayamos por partes, o mejor dicho por casos:
+
+- La falla por 50 o menos: ha sido un buen golpe y duele, puede dejar una buena
+contusión o cicatriz. Impone un penalizador a toda acción del nivel de fracaso,
+es decir, por lo que no lo pasó que desaparece a ritmo de 5 por asalto.
+- La falla entre 51 y 100: cosa seria, te han roto huesos, dislocado algo. Te comes
+el penalizador del apartado anterior, pero solo la mitad desaparece a ritmo de
+5 por asalto, la otra mitad cuando se recupere. Si el ataque no fue apuntado
+hay que localizar el crítico, tirando un d100. Si os pegan en la cabeza,
+inconscientes.
+- La falla entre 101 a 150: empezad a rezar. Os han destruido una parte del
+cuerpo, el penalizador funciona como en el apartado anterior, hay que ubicar el
+impacto también con el método anterior de no ser un ataque apuntado. Si es
+una extremidad, será totalmente destruida. Si es un punto vulnerable estáis
+muertos.
+- La falla por más de 150: si estáis rezando Dios no os oye. Como el caso anterior,
+pero caéis inconscientes independientemente de donde os hayan golpeado, y morís en número de turnos equivalentes a vuestra Constitución si no recibís
+atención médica (MUY DIFICIL 140)
+Los penalizadores a menos que vuestro nivel de regeneración tenga algo que
+objetar se van a ritmo de 5 por semana.
+
+==== Punto vulnerable
+Un golpe apuntado a un punto vulnerable precisa de hacer sólo un 10% de la vida
+máxima para forzar al atacado a pasar un control de crítico.
+
+=== Hablemos de Pifiar
+Nada que no sepáis espero.
+
+==== Defensa
+La caigas, y vuestro nivel de pifia se resta de vuestra defensa, si tenéis mas de un 80,
+pues igual os pasa algo como perder el arma.
+
+==== Atacar
+Falláis el golpe, no podéis realizar más acciones activas. Si el rival quiere, os hace
+contraataque y suma vuestro nivel de pifia, que si es mayor que 80 pues igual os trae
+alguna desgracia como tropezar.
+
+==== Turno
+Estáis empanados y os caen penalizadores.
+
+=== Lo sobrenatural el combate
+Aquí vamos…
+
+==== Cosas de la magia
+Los hechiceros no hacen parrys, tiene que ser su turno para atacar. Usan Proyección
+mágica como ataque y defensa. No son afectados por las reglas de combate de hasta
+ahora. Pueden lanzar tantos conjuros como les deje su zeón, ignoran las situaciones
+especiales de combate excepto ceguera. No se apunta con conjuros exceptuando
+conjuros de ataque. Los penalizadores a la acción si que afectan a la proyección.
+Si acumulas magia o la usas, cuenta como acción activa y el resto tienen penalizador,
+tu ACT se va a la mitad.
+
+==== Psíquico
+Un personaje puede atacar y utilizar sus poderes en el mismo asalto, pero
+aplicará un –25 a su potencial psíquico por cada acción activa adicional que
+realice previamente en el asalto. Si quiere además atacar en un asalto en el
+que usa sus poderes, deberá restar también un–25 a su habilidad ofensiva. En
+ninguno de los dos casos el personaje aplicará negativos a su Proyección Psíquica
+por realizar acciones adicionales.
+
+==== Los escudos sobrenaturales
+Os defendéis con vuestra proyección, e ignoráis casi todos los penalizadores. El
+bonificador a contra no aplica para proyección, pero si atacáis cuerpo a cuerpo si. Los
+escudos se rompen si reciben el suficiente daño, si se rompe un escudo en una defensa
+el personaje se come el golpe automáticamente, pero sólo con el daño sobrante de la
+ruptura de escudo. No se pueden combinar con parada o esquiva
+
+==== Cubrir a un tercero
+
+[quote]
+____
+Aunque un personaje dotado de habilidades sobrenaturales no puede protegerse
+con un escudo y defenderse físicamente a la vez, si puede utilizar un escudo para
+defender a un personaje distinto de su creador. Dicha acción no es pasiva, así
+que quien lo use debe haberlo colocado con anterioridad al ataque sobre el
+sujeto que desea proteger, o bien haber reservado su iniciativa en previsión. Si
+se utiliza esta segunda opción, debe declarar su intención antes de que se realice
+ninguna tirada. El personaje aplicará un penalizador de –40 a su Proyección
+cuando utilice sus barreras defensivas con esta finalidad.
+Si el escudo no consigue detener el impacto, el ataque seguirá su curso
+normalmente y el agredido podrá seguir defendiéndose.
+____
+
+==== Los ataques sobrenaturales
+Los ataques sobrenaturales pueden tener una serie de características especiales
+dependiendo de los mismos, no puedo simplificarlo está en la página 98 y 99.
+
+=== Subterfugio en combate
+Seamos ratillas.
+
+==== Ataques asesinos
+Si pasáis sigilo contra advertir o buscar del rival podéis tener un +170 al atacarlo por la
+espalda, no es preciso matarlo, podéis engatillarlo o lo que sea. (Se suma el
+penalizador de sorpresa como bonificador para vosotros para ser más justos.) Si esto le
+pasa a un mago, ki , etc. Tiene a la mitad la acumulación o potencial, a menos que
+estuviese alerta.
+Además, se puede hacer un ataque sigiloso, restringiendo la habilidad de ataque al
+valor de la secundaria sigilo, de ganar el enfrentamiento, consigue su objetivo sin
+hacer ningún ruido, y no alertaría a otras personas a menos que obviamente lo viesen.
+Ocultarse luchando
+No os da, en serio, no os da. Esto consiste en esconderse en mitad del combate y tiene
+fuertes penalizadores para hacerlo, tiene que estar el turno en que lo hace y el
+siguiente inmóvil para que no lo detecten.
