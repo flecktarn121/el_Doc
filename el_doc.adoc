@@ -1,9 +1,8 @@
 = EL Doc
 Luis Presa Collada <lpbest1777@gmail.com>
-
 :toc: left
 :toc-title: Índice
-:doctype: book
+:doctype: article 
 
 Espero que lo entendáis todo.
 
